@@ -1,3 +1,5 @@
+/* Nav Bar */
+
 #navbar {
   display: flex;
   justify-content: space-around;
@@ -24,3 +26,123 @@
 #logoIcon {
   width: 60px;
 }
+
+/* Nav Bar */
+
+/* Slider */
+
+#carouselExampleIndicators {
+  position: relative;
+  top: 100px;
+  margin: 20px auto 120px !important;
+}
+
+.carousel-item {
+  width: 70vw;
+  height: 40vh;
+}
+
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Silder */
+
+/* Products & Filter */
+.productSection {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.productTitle {
+  text-align: center;
+}
+
+.filterBtnsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.filterBtn {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.filterBtn.activeProduct {
+  color: white;
+  background-color: #0d6efd;
+}
+
+.allProductsContainer {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productContainer {
+  width: 20vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.prodImgContainer {
+  padding: 10px;
+  width: 100%;
+  height: 70%;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brandName {
+  margin-top: 3px;
+  color: gray;
+}
+
+.prodName {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price_cartContainer {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+@media (min-width: 0px) and (max-width: 650px) {
+  .productContainer {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .productContainer {
+    width: 40vw;
+  }
+}
+/* Products & Filter */

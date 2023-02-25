@@ -48,7 +48,9 @@
           </form>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarItems">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Products</a>
+              <a class="nav-link text-white" href="#productSectionId"
+                >Products</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -106,39 +108,108 @@
 
     <!-- SLIDER -->
 
-
-    <div id="carouselExampleIndicators" class="sliderContainer carousel slide w-75 h-50 position-absolute top-50 start-50 translate-middle w-75 h-50 shadow  " data-bs-ride="carousel">
+    <div
+      id="carouselExampleIndicators"
+      class="sliderContainer carousel slide w-75 h-50 w-75 h-50 shadow"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-      <div class="carousel-inner d-block w-100 h-100" >
+      <div class="carousel-inner d-block w-100 h-100">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="/E-commerce-website-project/rescources/promo-background-19939743.jpg" class="d-block w-100 " alt="...">
+          <img
+            src="./rescources/promo-background-19939743.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="/E-commerce-website-project/rescources/360_F_292367179_T5xBfw6nJBwJ0HE8wfwz20QuYfOrIm8b.jpg" class="d-block w-100 " alt="...">
+          <img
+            src="./rescources/360_F_292367179_T5xBfw6nJBwJ0HE8wfwz20QuYfOrIm8b.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="/E-commerce-website-project/rescources/360_F_219990962_HL9ogfePVbMbB6YokDpzdSLYhmtWLdHS.jpg" class="d-block w-100  " alt="...">
+          <img
+            src="./rescources/360_F_219990962_HL9ogfePVbMbB6YokDpzdSLYhmtWLdHS.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
+    <!-- ENDING SLIDER -->
 
+    <!-- Products & Filter -->
+    <section class="productSection" id="productSectionId">
+      <h1 class="productTitle">Featured Products</h1>
+      <div class="filterBtnsContainer">
+        <div class="filterBtn activeProduct">All</div>
+        <div class="filterBtn">Smartphones</div>
+        <div class="filterBtn">laptops</div>
+        <div class="filterBtn">Sunglasses</div>
+        <div class="filterBtn">Watches</div>
+      </div>
 
+      <div class="allProductsContainer">
+        <!-- <div class="productContainer">
+          <div class="prodImgContainer">
+            <img src="./Untitled.png" alt="" class="productImg" />
+          </div>
 
-<!-- ENDING SLIDER -->
+          <div class="prodDetails">
+            <div class="brandName">Adidas</div>
+            <div class="prodName">Big name here</div>
+            <div class="price_cartContainer">
+              <div class="price">$45</div>
+              <div class="cartIcon">&#128722;</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
 
+    <!-- Products & Filter -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -146,14 +217,16 @@
       crossorigin="anonymous"
     ></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./product.js"></script>
   </body>
 </html>
