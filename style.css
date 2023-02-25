@@ -1,0 +1,26 @@
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  /* background-color: rgb(49,153,206); */
+}
+#searchInput {
+  width: 400px;
+}
+#navbarTogglerDemo03 {
+  gap: 40px;
+}
+#navbarItems {
+  gap: 30px;
+}
+.turnOff {
+  display: none;
+}
+#cartIcon,
+#filterIcon {
+  width: 35px;
+}
+#logoIcon {
+  width: 60px;
+}
