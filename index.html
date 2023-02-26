@@ -48,7 +48,7 @@
           </form>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarItems">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#prod"
+              <a class="nav-link text-white" href="#productSectionId"
                 >Products</a
               >
             </li>
@@ -108,7 +108,7 @@
           </ul>
         </div>
         <a class="navbar-brand" href="#"
-          ><img src="rescources/cart.png" alt="cart" id="cartIcon"
+          ><img src="rescources/cart.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="cart" id="cartIcon"
         /></a>
       </div>
     </nav>
@@ -187,8 +187,6 @@
     </div>
 
     <!-- ENDING SLIDER -->
-    <div id="prod"></div>
-    <hr id="separator"/>
 
     <!-- Products & Filter -->
     <section class="productSection" id="productSectionId">
@@ -239,7 +237,6 @@
     ></script>
 
     <script src="./product.js"></script>
-    <hr id="separator"/>
 
     <!-- about -->
 
@@ -250,7 +247,7 @@
       <div class="about">
         <div class="aboutTitle">
           About
-          <hr id="abtSep" />
+          <hr />
         </div>
         <div class="aboutContent">
           ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias ea
@@ -267,13 +264,10 @@
         </div>
       </div>
     </div>
-    <div id="contactContainer" ></div>
-    <hr id="separator"/>
-   
 
     <!-- contactUs -->
 
-    <div class="contactContainer" >
+    <div class="contactContainer" id="contactContainer">
       <div class="contactTitle">Get in touch</div>
       <div class="form">
         <form>
@@ -327,17 +321,17 @@
         <div class="cont">
           <div class="loc">
             <img src="rescources/location.png" />
-            <div style="margin-top: 20px; font-size: 15px">
+            <div style="margin-top: 20px; font-size: 18px">
               104 Street 2765 Don
             </div>
           </div>
           <div class="phone">
             <img src="rescources/calling.png" />
-            <div style="margin-top: 20px; font-size: 15px">03-54321568</div>
+            <div style="margin-top: 20px; font-size: 18px">03-54321568</div>
           </div>
           <div class="e-mail">
             <img src="rescources/mail.png" />
-            <div style="margin-top: 20px; font-size: 15px">
+            <div style="margin-top: 20px; font-size: 18px">
               example@example.com
             </div>
           </div>
@@ -366,6 +360,21 @@
         </div>
       </div>
     </div>
+
+<!-- -------------------- cart popUP ------------------------  -->
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Details</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <button class="btn btn-primary" >Proceed</button>
+  </div>
+</div>
+<!--  -->
     <script src="contact.js"></script>
 
     <script
