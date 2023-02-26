@@ -151,7 +151,7 @@
 
 hr{
 width: 60px;
-width: 350px;
+width: 410px;
 height: 7px;
 background-color:#666;
 opacity: 0.5;  
@@ -203,9 +203,10 @@ text-align: start;
   }
   .about{
       margin-top: 30px;
+      margin-left: 0px;
   }
   .aboutContainer img{
-      width: 300px;
+      width: 400px;
       border-radius: 50%;
       box-shadow: 3px 7px 7px rgb(177, 202, 223);
   }
@@ -219,6 +220,14 @@ text-align: start;
      padding: 40px;
      box-shadow: 3px 7px 7px rgb(164, 196, 223);
  }
+ hr{
+  width: 60px;
+  width: 47vw;
+  height: 7px;
+  background-color:#666;
+  opacity: 0.5;  
+  text-align: start;
+  }
   
 }
 /* about */
@@ -243,12 +252,12 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(164, 164, 189) 0%, rgb
 }
 .form{
   background-color: rgb(234, 250, 245);
-  width: 900px;
+  width: 65vw;
   height:fit-content;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
-  align-items: start;
+  justify-content:space-around;
+  align-items: center;
   border-radius: 20px;
   margin-bottom: 25px;
   padding: 30px;
@@ -278,7 +287,7 @@ form>div{
   margin: 7px;
 }
 #name,#email,#message{
-  width: 790px;
+  width: 60vw;
   border-radius: 5px;
   height: 20px;
   background-color: rgb(216, 229, 245);
@@ -287,7 +296,7 @@ form>div{
 }
 
 #sub{
-  width: 820px;
+  width: 60vw;
   border-radius: 10px;
   height: 45px;
   background-color: rgb(108, 87, 224);
@@ -311,7 +320,7 @@ label{
 }
 .footer{
   background-color: aliceblue;
-  width: 900px;
+  width: 65vw;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -343,4 +352,57 @@ label{
   color: red;
   font-size: 15px;
 }
+
+@media (min-width:0px) and (max-width:850px){
+  .form{
+    background-color: rgb(234, 250, 245);
+    width: 80vw;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: start;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
+    box-shadow: 3px 7px 7px rgb(164, 196, 223);
+  }
+  #name,#email{
+    width: 72vw;
+    border-radius: 5px;
+    height: 20px;
+    background-color: rgb(216, 229, 245);
+    border-style: none;
+    align-self: center;
+  }
+  #message{
+    width: 72vw;
+  }
+  
+  #sub{
+    width: 72vw;
+    border-radius: 10px;
+    height: 45px;
+    background-color: rgb(108, 87, 224);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 8px;
+    border-style: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .footer{
+    background-color: aliceblue;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 3px 7px 7px rgb(164, 196, 223);
+  }
+
+}
+
 /*contact*/
