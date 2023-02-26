@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: url(../rescources/backgroud.png);
+  backface-visibility: 0;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: -2px -2px 2px 2px;
+}
+.header {
+  font-family: monospace;
+  padding: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: white;
+  font-weight: bold;
+  border: 0px solid rgb(51, 51, 255);
+  border-radius: 5px;
+}
+#signUPForm {
+  padding: 10px;
+}
+.signUpText {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: rgb(51, 51, 255);
+  font-weight: bold;
+}
+#mail,
+#pwd,
+#Fname,
+#Lname {
+  height: 7vh;
+  border: 1px solid rgb(51, 51, 255);
+  border-radius: 10px;
+  color: rgb(51, 51, 255);
+  padding-left: 8px;
+  background-color: rgb(204, 229, 255);
+}
+#mail:focus,
+#pwd:focus,
+#Fname:focus,
+#Lname:focus {
+  outline: none;
+  border-color: rgb(51, 51, 255);
+  box-shadow: 0 0 10px rgb(51, 51, 255);
+  background-color: rgb(224, 224, 224);
+}
+
+.invalidText {
+  border-color: red !important;
+}
+.invalidText:focus {
+  box-shadow: 0 0 10px red !important;
+}
+
+#signUpBtn {
+  height: 7vh;
+  font-family: monospace;
+  background-color: rgb(51, 51, 255);
+  border-color: rgb(0, 0, 153);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+#signUpBtn:hover {
+  background-color: rgb(0, 0, 153);
+}
+a {
+  text-decoration-line: none;
+
+  color: rgb(51, 51, 255);
+}
+a:hover {
+  color: rgb(0, 0, 153);
+}
+
+.warning {
+  font-size: 12px;
+  color: red;
+}
+
+.accordion {
+  color: rgb(51, 51, 255);
+  /*padding: 18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+#panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  visibility: hidden;
+  background-color: rgb(204, 229, 255);
+  border: 2px solid rgb(204, 229, 255);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.pwdText {
+  color: rgb(51, 51, 255);
+}

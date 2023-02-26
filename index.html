@@ -70,7 +70,9 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item text-primary" href="#contactContainer">Contact Us</a>
+                  <a class="dropdown-item text-primary" href="#contactContainer"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </li>
@@ -89,11 +91,17 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item text-primary" href="#">Login</a>
+                  <a class="dropdown-item text-primary" href="Login/login.html"
+                    >Login</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item text-primary" href="#">Sign-up</a>
+                  <a
+                    class="dropdown-item text-primary"
+                    href="SignUp/SignUp.html"
+                    >Sign-up</a
+                  >
                 </li>
               </ul>
             </li>
@@ -231,64 +239,133 @@
     <script src="./product.js"></script>
 
     <!-- about -->
-    
-    <div class="aboutContainer" >
+
+    <div class="aboutContainer">
       <div class="aboutImg">
-          <img src="rescources/aboutus.jpg">
+        <img src="rescources/aboutus.jpg" />
       </div>
       <div class="about">
-          <div class="aboutTitle">About<hr></div>
-          <div class="aboutContent">ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias ea unde sit cupiditate! Eaque rem quis accusantium exercitationem, assumenda sint neque, officia facilis obcaecati pariatur eveniet eligendi, asperiores ea?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, veritatis assumenda ratione sequi animi voluptas? Neque animi consequatur voluptates id accusantium tempora quae ut autem? Asperiores porro ab facere officia?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ullam cumque odit asperiores architecto! Ut ipsum doloribus aspernatur ducimus ratione molestiae tempore fuga blanditiis, vitae reiciendis quo temporibus delectus nesciunt.</div>
+        <div class="aboutTitle">
+          About
+          <hr />
+        </div>
+        <div class="aboutContent">
+          ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias ea
+          unde sit cupiditate! Eaque rem quis accusantium exercitationem,
+          assumenda sint neque, officia facilis obcaecati pariatur eveniet
+          eligendi, asperiores ea?Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Molestias, veritatis assumenda ratione sequi animi
+          voluptas? Neque animi consequatur voluptates id accusantium tempora
+          quae ut autem? Asperiores porro ab facere officia?Lorem ipsum dolor
+          sit amet consectetur, adipisicing elit. Magni ullam cumque odit
+          asperiores architecto! Ut ipsum doloribus aspernatur ducimus ratione
+          molestiae tempore fuga blanditiis, vitae reiciendis quo temporibus
+          delectus nesciunt.
+        </div>
       </div>
-      
-  </div>
-
-<!-- contactUs -->
-
-<div class="contactContainer" id="contactContainer">
-<div class="contactTitle" >Get in touch</div>
-    <div class="form">
-        <form>
-           
-            <div class="name">
-                <label>Name</label>
-                <input name="name" id="name" type="text" placeholder="Enter your name" />
-            </div>
-            <div class="email">
-                <label>Email</label>
-                <input name="email" id="email" type="text" placeholder="Enter a valid email address" />
-                <div class="error" id="emailErr"></div>
-            </div>
-            <div class="message">
-                <label>Message</label>
-                <textarea name="message" id="message" type="text" placeholder="Enter your message"></textarea>
-            </div>
-            <div class="checkBox" href="#"><input type="checkbox" class="check" onchange="activateButton(this)">I accept the <a href="#">Terms of Service</a></div>
-            <div class="submit">
-                <a href="#"><input type="button" id="sub" value="SUBMIT" onclick="validateForm()"/></a>
-            </div>
-        </form>
     </div>
-    <div class="footer">
+
+    <!-- contactUs -->
+
+    <div class="contactContainer" id="contactContainer">
+      <div class="contactTitle">Get in touch</div>
+      <div class="form">
+        <form>
+          <div class="name">
+            <label>Name</label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="email">
+            <label>Email</label>
+            <input
+              name="email"
+              id="email"
+              type="text"
+              placeholder="Enter a valid email address"
+            />
+            <div class="error" id="emailErr"></div>
+          </div>
+          <div class="message">
+            <label>Message</label>
+            <textarea
+              name="message"
+              id="message"
+              type="text"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <div class="checkBox" href="#">
+            <input
+              type="checkbox"
+              class="check"
+              onchange="activateButton(this)"
+            />I accept the <a href="#">Terms of Service</a>
+          </div>
+          <div class="submit">
+            <a href="#"
+              ><input
+                type="button"
+                id="sub"
+                value="SUBMIT"
+                onclick="validateForm()"
+            /></a>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
         <div class="cont">
-            <div class="loc"><img src="rescources/location.png"><div style="margin-top: 20px;font-size: 18px;">104 Street 2765 Don</div></div>
-            <div class="phone"><img src="rescources/calling.png"><div style="margin-top: 20px;font-size: 18px;">03-54321568</div></div>
-            <div class="e-mail"><img src="rescources/mail.png"><div style="margin-top: 20px;font-size: 18px;">example@example.com</div></div>
+          <div class="loc">
+            <img src="rescources/location.png" />
+            <div style="margin-top: 20px; font-size: 18px">
+              104 Street 2765 Don
+            </div>
+          </div>
+          <div class="phone">
+            <img src="rescources/calling.png" />
+            <div style="margin-top: 20px; font-size: 18px">03-54321568</div>
+          </div>
+          <div class="e-mail">
+            <img src="rescources/mail.png" />
+            <div style="margin-top: 20px; font-size: 18px">
+              example@example.com
+            </div>
+          </div>
         </div>
         <div class="social">
-            <div><a href="https://www.facebook.com"><img src="rescources/facebook.png" style="width: 35px;"></a></div>
-            <div><a href="https://www.twitter.com"><img src="rescources/twitter.png" style="width: 35px;"></a></div>
-            <div><a href="https://www.instagram.com"><img src="rescources/instagram.png" style="width: 35px;"></a></div>
-            <div><a href="https://www.youtube.com"><img src="rescources/youtube.png" style="width: 35px;"></a></div>
+          <div>
+            <a href="https://www.facebook.com"
+              ><img src="rescources/facebook.png" style="width: 35px"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.twitter.com"
+              ><img src="rescources/twitter.png" style="width: 35px"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com"
+              ><img src="rescources/instagram.png" style="width: 35px"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com"
+              ><img src="rescources/youtube.png" style="width: 35px"
+            /></a>
+          </div>
         </div>
+      </div>
     </div>
-  </div>
     <script src="contact.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"
-  ></script>
-  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  </html>
+</html>
