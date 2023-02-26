@@ -166,7 +166,7 @@ text-align: start;
    display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 500px; 
+  width: 36vw; 
   background-color: aliceblue;
   border-radius: 0px;
   padding: 40px;
@@ -206,7 +206,7 @@ text-align: start;
       margin-left: 0px;
   }
   .aboutContainer img{
-      width: 400px;
+      width: 80vw;
       border-radius: 50%;
       box-shadow: 3px 7px 7px rgb(177, 202, 223);
   }
@@ -214,7 +214,7 @@ text-align: start;
       display: flex;
      flex-direction: column;
      justify-content: space-evenly;
-     width: 60vw; 
+     width: 80vw; 
      background-color: aliceblue;
      border-radius: 0px;
      padding: 40px;
