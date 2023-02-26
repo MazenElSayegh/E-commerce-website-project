@@ -146,3 +146,201 @@
   }
 }
 /* Products & Filter */
+
+/* about */
+
+hr{
+width: 60px;
+width: 350px;
+height: 7px;
+background-color:#666;
+opacity: 0.5;  
+text-align: start;
+}
+.aboutContainer{
+  display: flex;
+  justify-content:space-around;
+  margin: 40px;  
+}
+.about{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 500px; 
+  background-color: aliceblue;
+  border-radius: 0px;
+  padding: 40px;
+  box-shadow: 3px 7px 7px rgb(164, 196, 223);
+  margin-left: 90px;
+}
+.aboutTitle{
+  color: rgb(50, 7, 243);
+  font-size: 40px;
+ /* font-family: Verdana, Geneva, Tahoma, sans-serif ;*/
+  font-weight: bolder;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 4px;
+}
+.aboutContent{
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
+}
+.aboutContainer img{
+  width: 520px;
+  border-radius: 50%;
+  box-shadow: 3px 7px 7px rgb(177, 202, 223);
+}
+@media (min-width:0px) and (max-width:850px){
+  .aboutContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+      align-items: center;
+      margin: 40px;   
+  }
+  .about{
+      margin-top: 30px;
+  }
+  .aboutContainer img{
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 3px 7px 7px rgb(177, 202, 223);
+  }
+  .about{
+      display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     width: 60vw; 
+     background-color: aliceblue;
+     border-radius: 0px;
+     padding: 40px;
+     box-shadow: 3px 7px 7px rgb(164, 196, 223);
+ }
+  
+}
+/* about */
+
+/*contact*/
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(164, 164, 189) 0%, rgb(167, 198, 204) 0%, rgb(230, 239, 241) 50%,rgb(167, 198, 204) 100%);
+}
+.contactTitle{
+  color: rgb(74, 18, 179);
+  font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 4px;
+}
+.form{
+  background-color: rgb(234, 250, 245);
+  width: 900px;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: start;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 30px;
+  box-shadow: 3px 7px 7px rgb(164, 196, 223);
+}
+  
+
+.name,.message,.email{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+input::placeholder,textarea::placeholder{
+  font-size: 15px;
+  padding: 3px;
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input,textarea{
+  font-size: 15px;
+  padding: 15px;
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form>div{
+  margin: 7px;
+}
+#name,#email,#message{
+  width: 790px;
+  border-radius: 5px;
+  height: 20px;
+  background-color: rgb(216, 229, 245);
+  border-style: none;
+  align-self: center;
+}
+
+#sub{
+  width: 820px;
+  border-radius: 10px;
+  height: 45px;
+  background-color: rgb(108, 87, 224);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 8px;
+  border-style: none;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+label{
+  font-size: 18px;
+}
+#message{
+  height:110px;
+}
+.footer img{
+  width: 40px;
+  color: blue;
+}
+.footer{
+  background-color: aliceblue;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 3px 7px 7px rgb(164, 196, 223);
+}
+
+.cont{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 35px;
+}
+.loc,.phone,.e-mail{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.error{
+  color: red;
+  font-size: 15px;
+}
+/*contact*/
