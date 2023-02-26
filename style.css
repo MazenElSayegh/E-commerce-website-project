@@ -149,7 +149,7 @@
 
 /* about */
 
-hr{
+#abtSep{
 width: 60px;
 width: 410px;
 height: 7px;
@@ -220,7 +220,7 @@ text-align: start;
      padding: 40px;
      box-shadow: 3px 7px 7px rgb(164, 196, 223);
  }
- hr{
+ #abtSep{
   width: 60px;
   width: 47vw;
   height: 7px;
@@ -352,6 +352,13 @@ label{
   color: red;
   font-size: 15px;
 }
+#separator{
+  width: 95vw;
+  background-color: rgb(0, 0, 0);
+  height: 2px;
+  margin: 20px;
+  margin-top: 50px;
+}
 
 @media (min-width:0px) and (max-width:850px){
   .form{
@@ -404,5 +411,6 @@ label{
   }
 
 }
+
 
 /*contact*/
