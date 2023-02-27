@@ -30,24 +30,28 @@ function showProducts(data) {
     switch (productsArray[0].category) {
       case "smartphones":
         prodContainer.classList.add("mobileProd");
+        sessionStorage.setItem("phonesArr", JSON.stringify(productsArray));
         break;
 
       case "laptops":
         prodContainer.classList.add("laptopProd");
+        sessionStorage.setItem("lapArr", JSON.stringify(productsArray));
         break;
 
       case "sunglasses":
         prodContainer.classList.add("sunglassesProd");
+        sessionStorage.setItem("glassesArr", JSON.stringify(productsArray));
         break;
 
       case "mens-watches":
         prodContainer.classList.add("watchProd");
+        sessionStorage.setItem("watchesArr", JSON.stringify(productsArray));
         break;
     }
 
     prodContainer.innerHTML = `
       <div class="prodImgContainer">
-        <img src="${product.images[0]}" alt="${product.title}" class="productImg" />
+        <img src="${product.thumbnail}" alt="${product.title}" class="productImg" />
       </div>
 
       <div class="prodDetails">
