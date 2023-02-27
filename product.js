@@ -1,3 +1,5 @@
+let searchBtn = document.querySelector("#searchBtn");
+
 async function getAndShowProducts() {
   await fetch("https://dummyjson.com/products/category/smartphones")
     .then((res) => res.json())
@@ -72,10 +74,13 @@ function filterProductHandler(e) {
   let prodContainer = document.querySelectorAll(".productContainer"),
     currActive = document.querySelector(".activeProduct");
 
+  let emptyTxt = document.querySelector(".NoResultFoundContainer");
+
   switch (e.target.innerText) {
     case "All":
       prodContainer.forEach((product) => (product.style.display = "block"));
       currActive.classList.remove("activeProduct");
+      emptyTxt.style.display = "none";
       e.target.classList.add("activeProduct");
       break;
 
@@ -86,6 +91,7 @@ function filterProductHandler(e) {
           : (product.style.display = "none");
       });
       currActive.classList.remove("activeProduct");
+      emptyTxt.style.display = "none";
       e.target.classList.add("activeProduct");
       break;
 
@@ -96,6 +102,7 @@ function filterProductHandler(e) {
           : (product.style.display = "none");
       });
       currActive.classList.remove("activeProduct");
+      emptyTxt.style.display = "none";
       e.target.classList.add("activeProduct");
       break;
 
@@ -106,6 +113,7 @@ function filterProductHandler(e) {
           : (product.style.display = "none");
       });
       currActive.classList.remove("activeProduct");
+      emptyTxt.style.display = "none";
       e.target.classList.add("activeProduct");
       break;
 
@@ -116,9 +124,40 @@ function filterProductHandler(e) {
           : (product.style.display = "none");
       });
       currActive.classList.remove("activeProduct");
+      emptyTxt.style.display = "none";
       e.target.classList.add("activeProduct");
       break;
   }
 }
 
+function searchHandler(e) {
+  let prodContainer = document.querySelectorAll(".productContainer");
+  let searchInput = document.querySelector("#searchInput");
+  let emptyTxt = document.querySelector(".NoResultFoundContainer");
+  let noResultFound = 0;
+
+  e.preventDefault();
+
+  emptyTxt.style.display = "none";
+
+  prodContainer.forEach((product) => {
+    if (
+      product
+        .querySelector(".prodName")
+        .innerText.toLowerCase()
+        .includes(searchInput.value.toLowerCase())
+    ) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+      noResultFound++;
+    }
+  });
+
+  if (noResultFound == prodContainer.length) {
+    emptyTxt.style.display = "block";
+  }
+}
+
 document.addEventListener("click", filterProductHandler); //filterBtnsHandler
+searchBtn.addEventListener("click", searchHandler);

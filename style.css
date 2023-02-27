@@ -134,6 +134,13 @@
   justify-content: space-between;
 }
 
+.NoResultFoundContainer {
+  display: none;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 70px 0px;
+}
+
 @media (min-width: 0px) and (max-width: 650px) {
   .productContainer {
     width: 80vw;
