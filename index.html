@@ -20,7 +20,7 @@
   </head>
   <body onload="disableSubmit()">
     <!-- //////////NAVBAR///////////// -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-primary">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary" id="navBarContainer">
       <div class="container" id="navbar">
         <button
           class="navbar-toggler"
@@ -148,7 +148,7 @@
 
     <div
       id="carouselExampleIndicators"
-      class="sliderContainer carousel slide w-75 h-50 w-75 h-50 shadow"
+      class="sliderContainer carousel slide w-100 shadow"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -176,21 +176,21 @@
       <div class="carousel-inner d-block w-100 h-100">
         <div class="carousel-item active" data-bs-interval="2000">
           <img
-            src="./rescources/promo-background-19939743.jpg"
+            src="./rescources/1.jpeg"
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img
-            src="./rescources/360_F_292367179_T5xBfw6nJBwJ0HE8wfwz20QuYfOrIm8b.jpg"
+            src="./rescources/2.jpeg"
             class="d-block w-100"
             alt="..."
           />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img
-            src="./rescources/360_F_219990962_HL9ogfePVbMbB6YokDpzdSLYhmtWLdHS.jpg"
+            src="./rescources/3.jpeg"
             class="d-block w-100"
             alt="..."
           />
@@ -471,7 +471,7 @@
           <div class="productOrderForm">
             <div class="prodCountContainer">
               Quantity:
-              <input type="number" class="prodOrderCount" value="1" />
+              <input type="number" class="prodOrderCount" value="1" min="1" />
             </div>
             <button class="prodOrderBtn">Add to Cart</button>
           </div>

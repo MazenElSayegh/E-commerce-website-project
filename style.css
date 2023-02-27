@@ -1,4 +1,15 @@
 /* Nav Bar */
+#navBarContainer{
+  /* position: absolute;
+  top: 100px; */
+  margin-top: 0px;
+  /* background-color: rgb(219,167,29); */
+  padding: 0px !important;
+  margin: 0px !important;
+  background-image: linear-gradient(to right, rgb(165, 184, 212), rgb(27, 98, 252));
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
 
 #navbar {
   display: flex;
@@ -33,13 +44,14 @@
 
 #carouselExampleIndicators {
   position: relative;
-  top: 100px;
-  margin: 20px auto 120px !important;
+  top: 20px;
+  margin: 20px auto 60px !important;
+  height: 70vh;
 }
 
 .carousel-item {
   width: 70vw;
-  height: 40vh;
+  height: 70vh;
 }
 
 .carousel-item > img {
@@ -84,6 +96,8 @@
 .allProductsContainer {
   width: 100%;
   margin-top: 2%;
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -91,7 +105,7 @@
 }
 
 .productContainer {
-  width: 20vw;
+  width: 25vw;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -99,6 +113,9 @@
   padding: 10px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: #0d6efd;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
