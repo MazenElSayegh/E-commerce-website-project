@@ -76,10 +76,27 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item turnOff">
-              <a class="nav-link text-white" href="#">Welcome</a>
+            <li class="nav-item dropdown turnOff" id="userName">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Welcome</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <button
+                    class="dropdown-item text-primary"
+                    onclick="accountSignOut()"
+                  >
+                    Sign-Out
+                  </button>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" id="account">
               <a
                 class="nav-link dropdown-toggle text-white"
                 href="#"

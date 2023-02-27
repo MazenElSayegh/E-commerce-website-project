@@ -19,17 +19,37 @@
     <link rel="stylesheet" href="Login.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col-12">
-          <div class="layout">
-            <h3 class="header bg-primary">Login to your account</h3>
-            <form id="loginForm" class="w-100">
-              <label for="mail" class="loginText">Email Address</label><br />
-              <input type="email" id="mail" name="mail" class="w-100" />
+          <div
+            class="layout d-flex flex-column justify-content-around align-items-center bg-white"
+          >
+            <h3
+              class="header bg-primary text-light fw-bold w-100 py-2 px-5 text-center"
+            >
+              Login to your account
+            </h3>
+            <form id="loginForm" class="w-100 py-2 px-2">
+              <label for="mail" class="loginText fw-bold text-primary"
+                >Email Address</label
+              ><br />
+              <input
+                type="email w-100 text-primary ps-2"
+                id="mail"
+                name="mail"
+                class="w-100"
+              />
               <p class="mt-0 warning"></p>
-              <label for="pwd" class="loginText">Password</label><br />
-              <input type="password" id="pwd" name="pwd" class="w-100" />
+              <label for="pwd" class="loginText fw-bold text-primary"
+                >Password</label
+              ><br />
+              <input
+                type="password"
+                id="pwd"
+                name="pwd"
+                class="w-100 w-100 text-primary ps-2"
+              />
               <p class="mt-0 warning"></p>
               <button type="button" id="loginBtn" class="w-100">Login</button>
             </form>

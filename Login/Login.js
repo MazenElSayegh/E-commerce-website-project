@@ -26,17 +26,23 @@ function AccountLogin() {
   }
 
   if (emailFlag && pwdFlag) {
-    let u = {
+    let user = {
       firstname: Fname,
       lastname: Lname,
       email: mail.value,
       psw: pwd.value,
     };
-    localStorage.setItem("gh", JSON.stringify(u));
-    warning[0].innerHTML = "";
+    localStorage.setItem("tempData", JSON.stringify(user));
+    for (let i = 0; i < warning.length; i++) {
+      warning[i].innerHTML = "";
+      warning[i].previousElementSibling.classList.remove("invalidText");
+    }
+    /*warning[0].innerHTML = "";
     warning[1].innerHTML = "";
+    
     warning[0].previousElementSibling.classList.remove("invalidText");
     warning[1].previousElementSibling.classList.remove("invalidText");
+    */
     window.location.href = "../index.html";
   } else if (emailFlag == true && pwdFlag == false) {
     warning[0].previousElementSibling.classList.remove("invalidText");

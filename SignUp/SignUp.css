@@ -4,55 +4,32 @@
 }
 body {
   background-image: url(../rescources/backgroud.png);
-  backface-visibility: 0;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 .layout {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
   border: 5px solid white;
   border-radius: 10px;
   box-shadow: -2px -2px 2px 2px;
 }
 .header {
   font-family: monospace;
-  padding: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
-  color: white;
-  font-weight: bold;
   border: 0px solid rgb(51, 51, 255);
   border-radius: 5px;
 }
-#signUPForm {
-  padding: 10px;
-}
 .signUpText {
-  font-weight: bold;
   font-size: 0.85rem;
-  color: rgb(51, 51, 255);
-  font-weight: bold;
 }
 #mail,
 #pwd,
 #Fname,
 #Lname {
-  height: 7vh;
+  height: 50px;
   border: 1px solid rgb(51, 51, 255);
   border-radius: 10px;
-  color: rgb(51, 51, 255);
-  padding-left: 8px;
   background-color: rgb(204, 229, 255);
 }
 #mail:focus,
@@ -73,14 +50,11 @@ body {
 }
 
 #signUpBtn {
-  height: 7vh;
+  height: 50px;
   font-family: monospace;
   background-color: rgb(51, 51, 255);
   border-color: rgb(0, 0, 153);
   border-radius: 10px;
-
-  color: white;
-  font-weight: bold;
   font-size: 2rem;
 }
 #signUpBtn:hover {

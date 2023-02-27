@@ -3,11 +3,6 @@ var panel = document.getElementById("panel");
 btn.addEventListener("click", createAccount);
 function createAccount() {
   checkPattern();
-  /*if (flag) {
-    alert("hi");
-  } else {
-    alert("error");
-  }*/
 }
 
 function checkPattern() {
@@ -18,7 +13,6 @@ function checkPattern() {
   let warning = document.getElementsByClassName("warning");
   let storage = document.getElementById("storage");
   let check = isExistEmail(mail);
-  console.log(check);
   let pattern = /\w+@\w+\.\w+/g;
   let pattern2 = /\w{8,}/g;
   let pattern3 = /\s/;
@@ -54,7 +48,7 @@ function checkPattern() {
   }
   if (count == 4) {
     let user_records = new Array();
-    let u = {
+    let user = {
       firstname: Fname.value,
       lastname: Lname.value,
       email: mail.value,
@@ -71,7 +65,7 @@ function checkPattern() {
     });
     localStorage.setItem("users", JSON.stringify(user_records));
 
-    localStorage.setItem("gh", JSON.stringify(u));
+    localStorage.setItem("tempData", JSON.stringify(user));
     window.location.href = "../index.html";
   }
 
@@ -87,28 +81,9 @@ function checkPattern() {
     }
     return emailFlag;
   }
-  /*localStorage.removeItem("users");
-  localStorage.removeItem("u");*/
-  /*var x = JSON.parse(localStorage.getItem("users"));
-  console.log(x[0].name);*/
-  /*if (Fname.value == "" || Fname.value.length > 20) {
-    warning[0].innerHTML =
-      "First name must be between 1 and 20 characters long";
-  } else {
-    warning[0].innerHTML = "";
-  }
-  if (Lname.value == "" || Lname.value.length > 20) {
-    warning[1].innerHTML = "Last name must be between 1 and 20 characters long";
-  } else {
-    warning[1].innerHTML = "";
-  }*/
 }
 
 function pwdRule() {
   panel.style.maxHeight = panel.scrollHeight + "px";
   panel.style.visibility = "visible";
 }
-/*function hideRule() {
-  panel.style.maxHeight = null;
-  panel.style.visibility = "hidden";
-}*/

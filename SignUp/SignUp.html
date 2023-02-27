@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,31 +18,59 @@
     <link rel="stylesheet" href="SignUp.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container d-flex justify-content-center align-items-center">
       <div class="row">
         <div class="col-12">
-          <div class="layout">
-            <h3 class="header bg-primary">Create your account</h3>
-            <form id="signUPForm" class="w-100">
-              <label for="Fname" class="signUpText">First Name</label><br />
-              <input type="text" id="Fname" name="FirstName" class="w-100" />
+          <div
+            class="layout d-flex flex-column justify-content-around align-items-center bg-white"
+          >
+            <h3
+              class="header bg-primary text-light fw-bold w-100 py-2 text-center"
+            >
+              Create your account
+            </h3>
+            <form id="signUPForm" class="w-100 py-2 px-2">
+              <label for="Fname" class="signUpText fw-bold text-primary"
+                >First Name</label
+              ><br />
+              <input
+                type="text"
+                id="Fname"
+                name="FirstName"
+                class="w-100 text-primary ps-2"
+              />
               <p class="mt-0 warning"></p>
 
-              <label for="Lname" class="signUpText">Last Name</label><br />
-              <input type="text" id="Lname" name="LastName" class="w-100" />
+              <label for="Lname" class="signUpText fw-bold text-primary"
+                >Last Name</label
+              ><br />
+              <input
+                type="text"
+                id="Lname"
+                name="LastName"
+                class="w-100 text-primary ps-2"
+              />
               <p class="mt-0 warning"></p>
 
-              <label for="mail" class="signUpText">Email Address</label><br />
-              <input type="email" id="mail" name="mail" class="w-100" />
+              <label for="mail" class="signUpText fw-bold text-primary"
+                >Email Address</label
+              ><br />
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                class="w-100 text-primary ps-2"
+              />
               <p class="mt-0 warning"></p>
-              <label for="pwd" class="signUpText">Password</label><br />
+              <label for="pwd" class="signUpText fw-bold text-primary"
+                >Password</label
+              ><br />
               <input
                 type="password"
                 id="pwd"
                 name="pwd"
-                class="w-100 accordion"
+                class="w-100 accordion text-primary ps-2"
                 onfocus="pwdRule()"
-                onblur="hideRule()"
               />
               <p class="mt-0 warning"></p>
               <div id="panel">
@@ -53,7 +80,11 @@
                   <li class="pwdText">Contain unique characters and numbers</li>
                 </ul>
               </div>
-              <button type="button" id="signUpBtn" class="w-100">
+              <button
+                type="button"
+                id="signUpBtn"
+                class="w-100 text-light fw-bold"
+              >
                 Sign Up
               </button>
             </form>
@@ -65,11 +96,6 @@
         </div>
       </div>
     </div>
-    <!--<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>-->
     <script src="SignUp.js"></script>
   </body>
 </html>
