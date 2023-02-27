@@ -132,7 +132,13 @@
           </ul>
         </div>
         <a class="navbar-brand" href="#"
-          ><img src="rescources/cart.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" alt="cart" id="cartIcon"
+          ><img
+            src="rescources/cart.png"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            alt="cart"
+            id="cartIcon"
         /></a>
       </div>
     </nav>
@@ -386,68 +392,94 @@
       </div>
     </div>
 
-<!-- -------------------- cart popUP ------------------------  -->
+    <!-- -------------------- cart popUP ------------------------  -->
 
-
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Details</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <button class="btn btn-primary position-relative bottom-0 start-50 translate-middle-x"" >Proceed</button>
-  </div>
-</div>
-<!-- Cart Popup -->
-
-<!-- Product Popup -->
-
-<section class="productPopSection">
-  <div class="exitProdPop">x</div>
-  <div class="productPopContainer">
-    <div class="imgContainer">
-      <img
-        src="https://omalkura.com/wp-content/uploads/2021/08/samsung-galaxy-a02-0.jpg"
-        alt=""
-      />
-    </div>
-
-    <div class="prodDetailsContainer">
-      <h1 class="prodTitle">Samsung A32</h1>
-      <hr />
-
-      <div class="prodBrand">Apple</div>
-      <div class="prodRating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-        <i class="fa-regular fa-star"></i>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Details</h5> -->
+        <img src="rescources/cart.png" style="width: 35px" />
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
-
-      <h3 class="prodDesc">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
-        quis.
-      </h3>
-      <hr />
-      <div class="price_discountContainer">
-        <div class="discount">-9%</div>
-        <div class="price">$1000</div>
-      </div>
-
-      <div class="productOrderForm">
-        <div class="prodCountContainer">
-        Quantity:
-        <input type="number" class="prodOrderCount" value="1" />
-      </div>
-        <button class="prodOrderBtn">Add to Cart</button>
+      <div class="offcanvas-body">
+        <div id="addedProducts"></div>
+        <div id="noProducts" class="">
+          <img src="rescources/emptycart.jpeg" id="emptyCart" /><button
+            id="contShopping"
+            class="btn position-relative bottom-0 start-50 translate-middle-x"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            Continue Shopping
+          </button>
+        </div>
+        <div id="" class="turnOff">
+          <button
+            class="btn btn-primary position-relative bottom-0 start-50 translate-middle-x"
+          >
+            Proceed
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    <!-- Cart Popup -->
 
-<!-- Product Popup -->
+    <!-- Product Popup -->
+
+    <section class="productPopSection">
+      <div class="exitProdPop">x</div>
+      <div class="productPopContainer">
+        <div class="imgContainer">
+          <img
+            src="https://omalkura.com/wp-content/uploads/2021/08/samsung-galaxy-a02-0.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="prodDetailsContainer">
+          <h1 class="prodTitle">Samsung A32</h1>
+          <hr />
+
+          <div class="prodBrand">Apple</div>
+          <div class="prodRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+
+          <h3 class="prodDesc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
+            quis.
+          </h3>
+          <hr />
+          <div class="price_discountContainer">
+            <div class="discount">-9%</div>
+            <div class="price">$1000</div>
+          </div>
+
+          <div class="productOrderForm">
+            <div class="prodCountContainer">
+              Quantity:
+              <input type="number" class="prodOrderCount" value="1" />
+            </div>
+            <button class="prodOrderBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Popup -->
     <script src="contact.js"></script>
     <script src="./productPopup.js"></script>
 
