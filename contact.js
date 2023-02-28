@@ -28,8 +28,7 @@ function disableSubmit() {
     userName.classList.remove("turnOff");
     userName.firstElementChild.classList.remove("dropdown-toggle");
 
-    userName.firstElementChild.innerHTML +=
-      " " + data.firstname + " " + data.lastname;
+    userName.firstElementChild.innerHTML += " " + data.firstname;
   }
 }
 

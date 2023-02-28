@@ -29,7 +29,12 @@ function productPopupHandler(e) {
       prodDiscount = productObj.discountPercentage,
       prodPrice = productObj.price,
       ratingElements = document.querySelectorAll(".prodRating i");
-
+    let p = {
+      img: prodImg,
+      title: prodTitle,
+      price: prodPrice,
+    };
+    localStorage.setItem("t", JSON.stringify(p));
     productPopup.querySelector("img").src = prodImg;
     productPopup.querySelector(".prodTitle").innerText = prodTitle;
     productPopup.querySelector(".prodBrand").innerText = prodBrand;
@@ -62,3 +67,39 @@ function hideProductPopup(e) {
 
 document.addEventListener("click", hideProductPopup);
 document.addEventListener("click", productPopupHandler);
+
+if (JSON.parse(localStorage.getItem("tempData")) != null) {
+  var dataprod = JSON.parse(localStorage.getItem("tempData")).email;
+}
+
+let addCartBtn = document.getElementById("addCartBtn");
+addCartBtn.addEventListener("click", accountCart);
+function accountCart() {
+  let userName = document.getElementById("userName");
+  let account = document.getElementById("account");
+  let popupAccount = document.getElementById("popupAccount");
+  let prodOrderCount = document.getElementsByClassName("prodOrderCount");
+  if (JSON.parse(localStorage.getItem("t")) != null) {
+    var d = JSON.parse(localStorage.getItem("t"));
+
+    if (account.classList.contains("turnOff")) {
+      let producet_records = new Array();
+
+      producet_records = JSON.parse(localStorage.getItem("ProductDetails"))
+        ? JSON.parse(localStorage.getItem("ProductDetails"))
+        : [];
+      producet_records.push({
+        email: dataprod,
+        img: d.img,
+        title: d.title,
+        price: d.price,
+        quantity: prodOrderCount[0].value,
+      });
+
+      localStorage.setItem("ProductDetails", JSON.stringify(producet_records));
+      alert("product added");
+    } else if (userName.classList.contains("turnOff")) {
+      popupAccount.style.visibility = "visible";
+    }
+  }
+}

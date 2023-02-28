@@ -20,7 +20,10 @@
   </head>
   <body onload="disableSubmit()">
     <!-- //////////NAVBAR///////////// -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-primary" id="navBarContainer">
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-primary"
+      id="navBarContainer"
+    >
       <div class="container" id="navbar">
         <button
           class="navbar-toggler"
@@ -175,25 +178,13 @@
       </div>
       <div class="carousel-inner d-block w-100 h-100">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img
-            src="./rescources/1.jpeg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="./rescources/1.jpeg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="./rescources/2.jpeg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="./rescources/2.jpeg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="./rescources/3.jpeg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="./rescources/3.jpeg" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
@@ -473,8 +464,14 @@
               Quantity:
               <input type="number" class="prodOrderCount" value="1" min="1" />
             </div>
-            <button class="prodOrderBtn">Add to Cart</button>
+            <button class="prodOrderBtn" id="addCartBtn">Add to Cart</button>
           </div>
+          <p id="popupAccount">
+            you need to sign-up or login<br /><a href="SignUp/SignUp.html"
+              >SignUp</a
+            >
+            <a href="Login/login.html">Login</a>
+          </p>
         </div>
       </div>
     </section>

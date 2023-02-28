@@ -1,12 +1,16 @@
 /* Nav Bar */
-#navBarContainer{
+#navBarContainer {
   /* position: absolute;
   top: 100px; */
   margin-top: 0px;
   /* background-color: rgb(219,167,29); */
   padding: 0px !important;
   margin: 0px !important;
-  background-image: linear-gradient(to right, rgb(165, 184, 212), rgb(27, 98, 252));
+  background-image: linear-gradient(
+    to right,
+    rgb(165, 184, 212),
+    rgb(27, 98, 252)
+  );
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
@@ -624,18 +628,23 @@ label {
   }
 }
 
+#popupAccount {
+  color: red;
+  text-align: center;
+  visibility: hidden;
+}
+
 /* Product Popup */
 
 /* cart popup */
 
-#emptyCart{
+#emptyCart {
   width: 100%;
   height: 75vh;
 }
-#contShopping{
-  background-color: rgb(100,101,254);
+#contShopping {
+  background-color: rgb(100, 101, 254);
   color: white;
 }
-
 
 /* cart popup */
