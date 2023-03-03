@@ -1,7 +1,7 @@
 /* Nav Bar */
 #navBarContainer {
   /* position: absolute;*/
-  top: 20px;
+  /* top: 20px; */
   margin-top: 0px;
   padding: 0px !important;
   margin: 0px !important;
@@ -36,12 +36,16 @@
 }
 #cartIcon,
 #filterIcon {
-  width: 35px;
+  width: 60px;
 }
 #logoIcon {
-  width: 60px;
+  width: 80px;
   /* background-color: #11aeef; */
 }
+/* #searchIcon{
+  width: 100%;
+  height: 100%;
+} */
 #searchBtn {
   color: black !important;
 }
@@ -156,14 +160,13 @@
   padding: 10px;
   width: 100%;
   height: 70%;
-  background-color: darkgray;
-  border-radius: 10px;
 }
 
 .productImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5%;
 }
 
 .brandName {
