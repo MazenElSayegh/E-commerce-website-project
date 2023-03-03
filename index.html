@@ -308,7 +308,7 @@
     <div class="contactContainer" id="contactContainer">
       <div class="contactTitle">Get in touch</div>
       <div class="form">
-        <form>
+        <form name="contactForm" onsubmit="return validateForm()" action="#" method="post">
           <div class="name">
             <label>Name</label>
             <input
@@ -347,10 +347,10 @@
           <div class="submit">
             <a href="#"
               ><input
-                type="button"
+                type="submit"
                 id="sub"
                 value="SUBMIT"
-                onclick="validateForm()"
+                //onclick="validateForm()"
             /></a>
           </div>
         </form>
