@@ -6,6 +6,9 @@ function getRightArray(element) {
 }
 
 function productPopupHandler(e) {
+
+  
+  
   const target = e.target.closest(".productContainer");
   if (target != null) {
     const productArr = JSON.parse(
@@ -59,11 +62,17 @@ function hideProductPopup(e) {
   if (
     (!e.target.closest(".productPopContainer") ||
       (e.target.classList.contains("exitProdPop")) &&
-    productPopup.style.visibility == "visible") ||
-	(e.target.classList.contains("prodOrderBtn"))
+    productPopup.style.visibility == "visible") 
+	// (e.target.classList.contains("prodOrderBtn"))
   ) {
+
+    // let popupAccount = document.querySelector("#popupAccount");
+  
     productPopup.style.visibility = "hidden";
+    // popupAccount.style.visibility = "hidden";
+
   }
+  
 }
 
 document.addEventListener("click", hideProductPopup);
@@ -77,10 +86,14 @@ let addCartBtn = document.getElementById("addCartBtn");
 addCartBtn.addEventListener("click", accountCart);
 
 function accountCart() {
+  
   let userName = document.getElementById("userName");
   let account = document.getElementById("account");
   let popupAccount = document.getElementById("popupAccount");
   let prodOrderCount = document.getElementsByClassName("prodOrderCount");
+  let addToCartBtn = document.querySelector("#addCartBtn");
+      addToCartBtn.removeAttribute("data-bs-toggle");
+      addToCartBtn.removeAttribute("data-bs-target");
   if (JSON.parse(localStorage.getItem("t")) != null) {
     var d = JSON.parse(localStorage.getItem("t"));
 
@@ -99,13 +112,31 @@ function accountCart() {
       });
 
       localStorage.setItem("ProductDetails", JSON.stringify(producet_records));
-      
+      let addToCartBtn = document.querySelector("#addCartBtn");
+      addToCartBtn.setAttribute("data-bs-toggle","modal");
+      addToCartBtn.setAttribute("data-bs-target","#exampleModal");
+      console.log("on");
       
       
     } else if (userName.classList.contains("turnOff")) {
       popupAccount.style.visibility = "visible";
+      let addToCartBtn = document.querySelector("#addCartBtn");
+      addToCartBtn.removeAttribute("data-bs-toggle");
+      addToCartBtn.removeAttribute("data-bs-target");
+      console.log("off");
     }
   }
 }
 
 
+function removeAttr(){
+  let addToCartBtn = document.querySelector("#addCartBtn");
+  addToCartBtn.removeAttribute("data-bs-toggle");
+  addToCartBtn.removeAttribute("data-bs-target");
+}
+
+function addAttr(){
+  let addToCartBtn = document.querySelector("#addCartBtn");
+  addToCartBtn.setAttribute("data-bs-toggle","modal");
+  addToCartBtn.setAttribute("data-bs-target","#exampleModal");
+}
