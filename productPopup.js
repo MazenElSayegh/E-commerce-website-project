@@ -75,6 +75,7 @@ if (JSON.parse(localStorage.getItem("tempData")) != null) {
 
 let addCartBtn = document.getElementById("addCartBtn");
 addCartBtn.addEventListener("click", accountCart);
+
 function accountCart() {
   let userName = document.getElementById("userName");
   let account = document.getElementById("account");

@@ -66,7 +66,7 @@
   position: relative;
   /* top: 20px; */
   /* margin: 20px auto 60px !important; */
-  height: 70vh;
+  height: 80vh;
   bottom: 80px;
   background-color: #11aeef;
   z-index: 0;
@@ -90,7 +90,7 @@
 
 .carousel-item {
   width: 70vw;
-  height: 70vh;
+  height: 80vh;
 }
 
 .carousel-item > img {
