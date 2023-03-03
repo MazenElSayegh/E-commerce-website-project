@@ -11,6 +11,7 @@
   /* opacity: 1; */
   width: 100%;
   transition: background-color 0.7s;
+  /* gap: 100px; */
 }
 .text-black {
   font-weight: bold !important;
@@ -20,8 +21,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 50px;
+  gap: 80px;
+  width: 100%;
   /* background-color: rgb(49,153,206); */
+}
+#loginContID {
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
 }
 #searchInput {
   width: 400px;
@@ -327,12 +335,13 @@ body {
   flex-direction: column;
 } */
 .contactTitle {
-  color: rgb(74, 18, 179);
+  color: black;
   font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   text-align: center;
   margin: 20px;
+  /* margin-top: 0; */
   letter-spacing: 4px;
 }
 .form {
