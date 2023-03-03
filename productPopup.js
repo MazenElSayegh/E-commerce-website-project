@@ -58,8 +58,9 @@ function hideProductPopup(e) {
   productPopup = document.querySelector(".productPopSection");
   if (
     (!e.target.closest(".productPopContainer") ||
-      e.target.classList.contains("exitProdPop")) &&
-    productPopup.style.visibility == "visible"
+      (e.target.classList.contains("exitProdPop")) &&
+    productPopup.style.visibility == "visible") ||
+	(e.target.classList.contains("prodOrderBtn"))
   ) {
     productPopup.style.visibility = "hidden";
   }
@@ -97,7 +98,9 @@ function accountCart() {
       });
 
       localStorage.setItem("ProductDetails", JSON.stringify(producet_records));
-      alert("product added");
+      
+      
+      
     } else if (userName.classList.contains("turnOff")) {
       popupAccount.style.visibility = "visible";
     }
