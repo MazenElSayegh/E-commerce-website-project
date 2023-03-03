@@ -714,12 +714,18 @@ label {
   height: 100vh;
 }
 #addedProducts {
-  /* background-color: #0d6efd; */
+  border: 5px solid blue;
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
 }
 #proceedBtn {
   height: 5vh;
   width: 10vw;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #emptyCart {
   width: 100%;

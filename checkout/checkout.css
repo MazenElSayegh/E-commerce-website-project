@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(232, 253, 253);
+}
+
+.checkoutContainer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.paymentDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 32vw;
+    height: fit-content;
+    padding: 10px;
+}
+.country,.city,.postalCode,.street{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.paymentDetails div{
+    margin-bottom: 10px;
+}
+#countryInp,#postalCodeInp{
+    width: 23vw;
+    height: 30px;
+    margin-top: 5px;
+}
+.add{
+    display: flex;
+}
+#cityInp,#streetInp{
+    width: 11.2vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nameInp,#numInp{
+    width: 20vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#cvvInp,#exInp{
+    width: 8vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.nameCard,.cardNum,.cvv,.expiry{
+    display: flex;
+    flex-direction: column;
+}
+#placeOrder{
+    background-color: rgb(58, 58, 247);
+    border-style: none;
+    border-radius: 3px;
+    color: aliceblue;
+    width: 23vw;
+    height: 8vh;
+}
+.cartSummary{
+    border-style:solid;
+    padding: 10px;
+    width: 40vw;
+    border-color: rgb(215, 215, 253);
+    border-radius: 20px;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    width: 30vw;
+    height: 0.25vh;
+    background-color: black;
+    align-self: center;
+    
+}
+input{
+    border-radius: 4px;
+    background-color: rgb(215, 215, 253);
+    border-style: none;
+    padding: 5px;
+}
+input[type='password']{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.185em;
+    font-size: 20px;
+}
+@media (min-width: 0px) and (max-width: 1150px) {
+    .checkoutContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+      }
+      .cartSummary{
+        border-style:solid;
+        padding: 10px;
+        width: 75vw;
+        border-color: rgb(215, 215, 253);
+        border-radius: 20px;
+        border-width: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .paymentDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 87vw;
+        height: fit-content;
+        padding: 10px;
+        align-items: center;
+    }
+    hr{
+        width: 70vw;
+        height: 0.25vh;
+        background-color: black;
+        align-self: center;
+        
+    }
+    #placeOrder{
+        background-color: rgb(58, 58, 247);
+        border-style: none;
+        border-radius: 3px;
+        color: aliceblue;
+        width: 63vw;
+        height: 8vh;
+    }
+    #nameInp,#numInp{
+        width: 52vw;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    
+    #cvvInp,#exInp{
+        width: 21vw;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    #countryInp,#postalCodeInp{
+        width: 62vw;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .add{
+        display: flex;
+    }
+    #cityInp,#streetInp{
+        width: 29vw;
+        height: 30px;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    }
