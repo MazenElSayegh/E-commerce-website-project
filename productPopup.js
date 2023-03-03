@@ -100,7 +100,7 @@ function accountCart() {
       localStorage.setItem("ProductDetails", JSON.stringify(producet_records));
       
       
-      alert("product added");
+      
     } else if (userName.classList.contains("turnOff")) {
       popupAccount.style.visibility = "visible";
     }
