@@ -1,18 +1,18 @@
 /* Nav Bar */
 #navBarContainer {
-  /* position: absolute;
-  top: 100px; */
+  /* position: absolute;*/
+  top: 20px;
   margin-top: 0px;
-  /* background-color: rgb(219,167,29); */
   padding: 0px !important;
   margin: 0px !important;
-  background-image: linear-gradient(
-    to right,
-    rgb(165, 184, 212),
-    rgb(27, 98, 252)
-  );
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
+  /* background-color: #11aeef; */
+  background-color: transparent;
+  z-index: 1;
+  /* opacity: 1; */
+  width: 100%;
+}
+.text-black {
+  font-weight: bold !important;
 }
 
 #navbar {
@@ -33,7 +33,6 @@
 }
 .turnOff {
   display: none;
-  
 }
 #cartIcon,
 #filterIcon {
@@ -41,17 +40,39 @@
 }
 #logoIcon {
   width: 60px;
+  /* background-color: #11aeef; */
 }
-
+#searchBtn {
+  color: black !important;
+}
 /* Nav Bar */
 
 /* Slider */
 
 #carouselExampleIndicators {
   position: relative;
-  top: 20px;
-  margin: 20px auto 60px !important;
+  /* top: 20px; */
+  /* margin: 20px auto 60px !important; */
   height: 70vh;
+  bottom: 80px;
+  background-color: #11aeef;
+  z-index: 0;
+}
+/* .sizeTrial {
+  width: 600px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  z-index: 1;
+  
+} */
+#topCurve {
+  z-index: 1;
+  width: 25%;
+  position: absolute;
+}
+.carousel-indicators {
+  z-index: 0;
 }
 
 .carousel-item {
@@ -83,6 +104,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  /* gap: 10px; */
 }
 
 .filterBtn {
@@ -91,6 +113,9 @@
   margin: 0px 5px;
   cursor: pointer;
   border-radius: 10%;
+}
+.filterBtn:hover {
+  background-color: rgb(101, 192, 223);
 }
 
 .filterBtn.activeProduct {
@@ -114,14 +139,17 @@
   height: 400px;
   display: flex;
   flex-direction: column;
-  border: solid 1px black;
+  /* border: solid 1px #072655 !important; */
   padding: 10px;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: #0d6efd;
-  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 1px;
+  /* box-shadow: #0d6efd; */
+  background-color: aliceblue;
   border: none;
   cursor: pointer;
+}
+.productContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px 3px;
 }
 
 .prodImgContainer {
@@ -196,6 +224,10 @@
   display: flex;
   justify-content: space-around;
   margin: 40px;
+  background-image: url(rescources/why.jpg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
 .about {
   display: flex;
@@ -272,16 +304,24 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
+  /* background: rgb(2, 0, 36); */
+  /* background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgb(164, 164, 189) 0%,
     rgb(167, 198, 204) 0%,
     rgb(230, 239, 241) 50%,
     rgb(167, 198, 204) 100%
-  );
+  ); */
 }
+/* #contactContainer{
+  background-image: url(rescources/why.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
 .contactTitle {
   color: rgb(74, 18, 179);
   font-size: 40px;
@@ -639,19 +679,18 @@ label {
 
 /* cart popup */
 
-#cartItemContainer{
+#cartItemContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   background-color: #0d6efd;
-
 }
-#itemImage{
+#itemImage {
   width: 20vw;
   height: 20vh;
 }
-.addedToCartOn{
+.addedToCartOn {
   display: flex;
   background-color: #a80000;
   height: 70vh;
@@ -660,17 +699,14 @@ label {
   align-items: center;
   width: 100%;
   height: 100vh;
-  
 }
-#addedProducts{
+#addedProducts {
   /* background-color: #0d6efd; */
 }
-#proceedBtn{
+#proceedBtn {
   height: 5vh;
-  width: 10vw; 
+  width: 10vw;
   text-align: center;
-  
-  
 }
 #emptyCart {
   width: 100%;

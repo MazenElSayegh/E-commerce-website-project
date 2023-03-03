@@ -20,10 +20,8 @@
   </head>
   <body onload="disableSubmit()">
     <!-- //////////NAVBAR///////////// -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top bg-primary"
-      id="navBarContainer"
-    >
+    <!-- #region navbar -->
+    <nav class="navbar navbar-expand-lg" id="navBarContainer">
       <div class="container" id="navbar">
         <button
           class="navbar-toggler"
@@ -58,13 +56,13 @@
           </form>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarItems">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#productSectionId"
+              <a class="nav-link text-black" href="#productSectionId"
                 >Products</a
               >
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-black"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -88,7 +86,7 @@
             </li>
             <li class="nav-item dropdown turnOff" id="userName">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-black"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -108,7 +106,7 @@
             </li>
             <li class="nav-item dropdown" id="account">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-black"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -145,15 +143,17 @@
         /></a>
       </div>
     </nav>
+    <!-- #endregion  -->
     <!-- ///////////////NAVBAR///////////////// -->
-
     <!-- SLIDER -->
+    <!-- #region slider -->
 
     <div
       id="carouselExampleIndicators"
       class="sliderContainer carousel slide w-100 shadow"
       data-bs-ride="carousel"
     >
+    <!-- <img src="rescources/cross_top.png" id="topCurve" > -->
       <div class="carousel-indicators">
         <button
           type="button"
@@ -178,13 +178,13 @@
       </div>
       <div class="carousel-inner d-block w-100 h-100">
         <div class="carousel-item active" data-bs-interval="2000">
-          <img src="./rescources/1.jpeg" class="d-block w-100" alt="..." />
+          <img src="./rescources/sale.jpg" class="d-block" alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="./rescources/2.jpeg" class="d-block w-100" alt="..." />
+          <img src="./rescources/onlineshop.jpg" class="d-block w-100 " alt="..." />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="./rescources/3.jpeg" class="d-block w-100" alt="..." />
+          <img src="./rescources/4342044_19367.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
@@ -207,11 +207,14 @@
       </button>
     </div>
 
+    <!-- #endregion  -->
     <!-- ENDING SLIDER -->
-
+  
     <!-- Products & Filter -->
+    <!-- #region products & filter -->
+
     <section class="productSection" id="productSectionId">
-      <h1 class="contactTitle">Featured Products</h1>
+      <!-- <h1 class="contactTitle">Featured Products</h1> -->
       <div class="filterBtnsContainer">
         <div class="filterBtn activeProduct">All</div>
         <div class="filterBtn">Smartphones</div>
@@ -239,6 +242,7 @@
       </div>
       <div id="aboutContainer"></div>
     </section>
+    <!-- #endregion  -->
 
     <!-- Products & Filter -->
 
@@ -261,7 +265,7 @@
     <script src="./product.js"></script>
 
     <!-- about -->
-
+    <!-- #region about -->
     <div class="aboutContainer">
       <div class="aboutImg">
         <img src="rescources/aboutus.jpg" />
@@ -286,9 +290,11 @@
         </div>
       </div>
     </div>
+    <!-- #endregion  -->
+    <!-- About  -->
 
     <!-- contactUs -->
-
+    <!-- #region contactUs -->
     <div class="contactContainer" id="contactContainer">
       <div class="contactTitle">Get in touch</div>
       <div class="form">
@@ -382,9 +388,10 @@
         </div>
       </div>
     </div>
-
+    <!-- #endregion  -->
+    <!-- Contact Us -->
     <!-- -------------------- cart popUP ------------------------  -->
-
+    <!-- #region cart popup -->
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
@@ -413,23 +420,18 @@
             Continue Shopping
           </button>
         </div>
-        <div id="addedToCart" class="turnOff" >
-        
-        <div id="addedProducts"></div>
+        <div id="addedToCart" class="turnOff">
+          <div id="addedProducts"></div>
 
-          <button
-            class="btn btn-primary "
-            id="proceedBtn"
-          >
-            Proceed
-          </button>
+          <button class="btn btn-primary" id="proceedBtn">Proceed</button>
         </div>
       </div>
     </div>
+    <!-- #endregion  -->
     <!-- Cart Popup -->
 
     <!-- Product Popup -->
-
+    <!-- #region product popup -->
     <section class="productPopSection">
       <div class="exitProdPop">x</div>
       <div class="productPopContainer">
@@ -479,6 +481,7 @@
         </div>
       </div>
     </section>
+    <!-- #endregion  -->
 
     <!-- Product Popup -->
     <script src="contact.js"></script>
@@ -492,5 +495,3 @@
     ></script>
   </body>
 </html>
-
-
