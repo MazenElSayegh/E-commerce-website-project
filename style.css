@@ -10,6 +10,7 @@
   z-index: 1;
   /* opacity: 1; */
   width: 100%;
+  transition: background-color 0.7s;
 }
 .text-black {
   font-weight: bold !important;
