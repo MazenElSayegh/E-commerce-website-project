@@ -23,27 +23,23 @@
       <div class="row">
         <div class="col-12">
           <div
-            class="layout d-flex flex-column justify-content-around align-items-center bg-white"
+            class="layout d-flex flex-column justify-content-around align-items-center"
           >
             <div class="mx-5 my-5">
-              <h3
-                class="header text-primary fw-bold w-100 py-2 px-5 text-center"
-              >
+              <h2 class="header fw-bold w-100 py-2 px-5 text-center">
                 Login to your account
-              </h3>
+              </h2>
               <form id="loginForm" class="w-100 py-2 px-2">
-                <label for="mail" class="loginText fw-bold text-primary"
-                  >Email Address</label
+                <label for="mail" class="loginText fw-bold">Email Address</label
                 ><br />
                 <input
-                  type="email w-100 text-primary ps-2"
+                  type="email "
                   id="mail"
                   name="mail"
-                  class="w-100"
+                  class="w-100 text-primary ps-2"
                 />
                 <p class="mt-0 warning"></p>
-                <label for="pwd" class="loginText fw-bold text-primary"
-                  >Password</label
+                <label for="pwd" class="loginText fw-bold">Password</label
                 ><br />
                 <input
                   type="password"
@@ -55,7 +51,7 @@
                 <button type="button" id="loginBtn" class="w-100">Login</button>
               </form>
               <div id="toSignupPage ">
-                <span>Don't have an account? </span>
+                <span class="fw-bold">Don't have an account? </span>
                 <a href="../SignUp/SignUp.html" target="_self">Sign Up</a>
               </div>
             </div>
