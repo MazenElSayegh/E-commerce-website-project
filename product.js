@@ -130,13 +130,11 @@ function filterProductHandler(e) {
   }
 }
 
-function searchHandler(e) {
+function searchHandler() {
   let prodContainer = document.querySelectorAll(".productContainer");
   let searchInput = document.querySelector("#searchInput");
   let emptyTxt = document.querySelector(".NoResultFoundContainer");
   let noResultFound = 0;
-
-  e.preventDefault();
 
   emptyTxt.style.display = "none";
 

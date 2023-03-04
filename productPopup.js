@@ -62,10 +62,10 @@ function hideProductPopup(e) {
       productPopup.style.visibility == "visible")
     // (e.target.classList.contains("prodOrderBtn"))
   ) {
-    // let popupAccount = document.querySelector("#popupAccount");
+    let popupAccount = document.querySelector("#popupAccount");
 
     productPopup.style.visibility = "hidden";
-    // popupAccount.style.visibility = "hidden";
+    popupAccount.style.visibility = "hidden";
   }
 }
 
@@ -109,10 +109,7 @@ function accountCart() {
       addToCartBtn.setAttribute("data-bs-toggle", "modal");
       addToCartBtn.setAttribute("data-bs-target", "#exampleModal");
 
-      addToCartBtn.addEventListener("click", () => {
-        let productPopup = document.querySelector(".productPopSection");
-        productPopup.style.visibility = "hidden";
-      });
+      addToCartBtn.addEventListener("click", hideProductPopupFromAddBtn);
       console.log("on");
     } else if (userName.classList.contains("turnOff")) {
       popupAccount.style.visibility = "visible";
@@ -120,13 +117,17 @@ function accountCart() {
       addToCartBtn.removeAttribute("data-bs-toggle");
       addToCartBtn.removeAttribute("data-bs-target");
 
-      addToCartBtn.removeEventListener("click", () => {
-        let productPopup = document.querySelector(".productPopSection");
-        productPopup.style.visibility = "hidden";
-      });
+      addToCartBtn.removeEventListener("click", hideProductPopupFromAddBtn);
       console.log("off");
     }
   }
+}
+
+function hideProductPopupFromAddBtn() {
+  let productPopup = document.querySelector(".productPopSection");
+  let popupAccount = document.querySelector("#popupAccount");
+  productPopup.style.visibility = "hidden";
+  popupAccount.style.visibility = "hidden";
 }
 
 function removeAttr() {
