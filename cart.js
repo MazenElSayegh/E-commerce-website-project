@@ -45,7 +45,7 @@ function cartDetails() {
                         <span id="itemTP">Total Price: ${
                           data[i].quantity * data[i].price
                         }$</span>
-                        <button type="button" class ="pRemove" >Delete Item</button> 
+                        <button type="button" class ="pRemove" >Delete Item</button>
                         <hr id="line">
 
                  </div>
