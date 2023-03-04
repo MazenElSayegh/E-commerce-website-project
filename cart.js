@@ -57,7 +57,7 @@ function cartDetails() {
   }
 }
 function productDelete(e) {
-  e.preventDefault();
+  // e.preventDefault();
   let tar = e.target;
 
   if (e.target.classList.contains("pRemove")) {
