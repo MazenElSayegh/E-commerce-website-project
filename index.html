@@ -46,14 +46,15 @@
               aria-label="Search"
               id="searchInput"
             />
-            <button
+            <a
               class="btn btn-light text-primary"
+              href="#productSectionId"
               type="submit"
               id="searchBtn"
             >
-              Search
-              <!-- <img src="rescources/searchIcon.png" id="searchIcon"> -->
-            </button>
+              <!-- Search -->
+              <img src="rescources/searchIconW.png" id="searchIcon">
+          </a>
           </form>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarItems">
             <li class="nav-item">
@@ -71,15 +72,15 @@
               >
                 About
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu roundMenu">
                 <li>
-                  <a class="dropdown-item text-primary" href="#aboutContainer"
+                  <a class="dropdown-item text-black" href="#aboutContainer"
                     >Website-Name</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><hr class="dropdown-divider bg-dark" /></li>
                 <li>
-                  <a class="dropdown-item text-primary" href="#contactContainer"
+                  <a class="dropdown-item text-black" href="#contactContainer"
                     >Contact Us</a
                   >
                 </li>
@@ -95,10 +96,10 @@
                 id="loginContID"
                 >Welcome</a
               >
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu roundMenu">
                 <li>
                   <button
-                    class="dropdown-item text-primary"
+                    class="dropdown-item text-black"
                     onclick="accountSignOut()"
                   >
                     Sign-Out
@@ -116,16 +117,16 @@
               >
                 Account
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu roundMenu">
                 <li>
-                  <a class="dropdown-item text-primary" href="Login/login.html"
+                  <a class="dropdown-item text-black" href="Login/login.html"
                     >Login</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><hr class="dropdown-divider bg-dark" /></li>
                 <li>
                   <a
-                    class="dropdown-item text-primary"
+                    class="dropdown-item text-black "
                     href="SignUp/SignUp.html"
                     >Sign-up</a
                   >
@@ -480,7 +481,7 @@
               Quantity:
               <input type="number" class="prodOrderCount" value="1" min="1" />
             </div>
-            <button class="prodOrderBtn" id="addCartBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart</button>
+            <button class="prodOrderBtn" id="addCartBtn">Add to Cart</button>
           </div>
           <p id="popupAccount">
             you need to sign-up or login<br /><a href="SignUp/SignUp.html"
