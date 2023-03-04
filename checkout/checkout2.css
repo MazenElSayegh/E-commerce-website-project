@@ -5,7 +5,7 @@ body{
 .checkoutContainer{
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .paymentDetails{
     display: flex;
@@ -13,9 +13,11 @@ body{
     justify-content: space-around;
     width: 24.5vw;
     height: fit-content;
-    
+    padding: 10px;
 }
-
+.paymentDetails>div{
+    margin-top: 30px;
+}
 .country,.city,.postalCode,.street{
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@ body{
 #countryInp,#postalCodeInp{
     width: 23vw;
     height: 30px;
+    margin-top: 5px;
 }
 .add{
     display: flex;
@@ -53,7 +56,7 @@ body{
 #cvvInp,#exInp{
     width: 8vw;
     height: 30px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 .nameCard,.cardNum,.cvv,.expiry{
@@ -67,22 +70,17 @@ body{
     color: aliceblue;
     width: 23vw;
     height: 8vh;
-    margin-top: 10px;
 }
 .cartSummary{
     border-style:solid;
     padding: 10px;
-    width: 45vw;
+    width: 40vw;
     border-color: rgb(215, 215, 253);
     border-radius: 20px;
     border-width: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-}
-.cartSummary>h1{
-    margin-bottom: 20px;
 }
 hr{
     width: 30vw;
@@ -102,7 +100,7 @@ input[type='password']{
     letter-spacing: 0.185em;
     font-size: 20px;
 }
-@media (min-width: 0px) and (max-width: 1050px) {
+@media (min-width: 0px) and (max-width: 1150px) {
     .checkoutContainer{
         display: flex;
         flex-direction: column;
@@ -120,6 +118,7 @@ input[type='password']{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     .paymentDetails{
         display: flex;
@@ -146,14 +145,14 @@ input[type='password']{
         height: 8vh;
     }
     #nameInp,#numInp{
-        width: 61vw;
+        width: 52vw;
         height: 30px;
         margin-top: 5px;
         margin-right: 10px;
     }
     
     #cvvInp,#exInp{
-        width: 30vw;
+        width: 21vw;
         height: 30px;
         margin-top: 5px;
         margin-right: 10px;
@@ -167,34 +166,13 @@ input[type='password']{
         display: flex;
     }
     #cityInp,#streetInp{
-        width: 29.5vw;
+        width: 29vw;
         height: 30px;
         margin-top: 5px;
         margin-right: 10px;
     }
-    .radioCont{
-        background-color: azure;
-        border-style: solid;
-        border-color: rgb(215, 217, 252);
-        border-radius: 10px;
-        border-width: 2px;
-        width: 64vw;
     }
     .onDeliveryContainer,.creditContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #cartItemContainer{
-        width: 65vw;
-        padding: 1.5vw;
-    }
-    }
-    .onDeliveryContainer{
-        display: content;
-    }
-    .creditContainer{
         display: none;
     }
     .radioCont{
@@ -204,57 +182,8 @@ input[type='password']{
         border-color: rgb(215, 217, 252);
         border-radius: 10px;
         border-width: 2px;
+        
     }
     h1{
-        margin-bottom: 10px;
-    }
-    #cartItemContainer{
-        display:flex;
-        justify-content: space-between;
-        background-color: azure;
-        box-shadow: 3px 3px 7px rgb(188, 188, 247);
-        /*padding-top: 30px;
-        padding-left: 30px;*/
         margin-bottom: 20px;
-        padding: 1.5vw;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 13px;
     }
-    #itemImage{
-        width: 130px;
-        height: 80px;
-        margin-right: 3vw;
-    }
-    .priceData{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .prodName{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-inline: 3vw;
-        font-weight: bold;
-    }
-    #itemTP{
-        font-weight: bold;
-    }
-    #totalP{
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    
-    }
-    #subTotal,#tax,#shipment{
-        font-size: 15px;
-    }
-    #totalFinal{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-    #totalP>div{
-        margin:7px
-    }
-    

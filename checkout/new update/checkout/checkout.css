@@ -5,7 +5,7 @@ body{
 .checkoutContainer{
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .paymentDetails{
     display: flex;
@@ -13,9 +13,11 @@ body{
     justify-content: space-around;
     width: 24.5vw;
     height: fit-content;
-    
+    padding: 10px;
 }
-
+.paymentDetails>div{
+    margin-top: 30px;
+}
 .country,.city,.postalCode,.street{
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@ body{
 #countryInp,#postalCodeInp{
     width: 23vw;
     height: 30px;
+    margin-top: 5px;
 }
 .add{
     display: flex;
@@ -53,7 +56,7 @@ body{
 #cvvInp,#exInp{
     width: 8vw;
     height: 30px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 .nameCard,.cardNum,.cvv,.expiry{
@@ -67,7 +70,6 @@ body{
     color: aliceblue;
     width: 23vw;
     height: 8vh;
-    margin-top: 10px;
 }
 .cartSummary{
     border-style:solid;
@@ -174,6 +176,7 @@ input[type='password']{
     }
     .radioCont{
         background-color: azure;
+        padding: 12px;
         border-style: solid;
         border-color: rgb(215, 217, 252);
         border-radius: 10px;
@@ -187,14 +190,10 @@ input[type='password']{
         align-items: center;
     }
     #cartItemContainer{
-        width: 65vw;
-        padding: 1.5vw;
+        width: 60vw;
     }
     }
-    .onDeliveryContainer{
-        display: content;
-    }
-    .creditContainer{
+    .onDeliveryContainer,.creditContainer{
         display: none;
     }
     .radioCont{
@@ -216,14 +215,14 @@ input[type='password']{
         /*padding-top: 30px;
         padding-left: 30px;*/
         margin-bottom: 20px;
-        padding: 1.5vw;
+        padding: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 13px;
     }
     #itemImage{
         width: 130px;
         height: 80px;
-        margin-right: 3vw;
+        margin-right: 30px;
     }
     .priceData{
         display: flex;
@@ -234,7 +233,7 @@ input[type='password']{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-inline: 3vw;
+        margin-inline: 50px;
         font-weight: bold;
     }
     #itemTP{
