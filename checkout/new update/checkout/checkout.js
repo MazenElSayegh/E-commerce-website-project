@@ -4,14 +4,14 @@ var radioBtn=document.querySelectorAll('input[name="paymentMethod"]');
 creditBtn.addEventListener("click",()=>{
     if (creditBtn.checked){
         document.querySelector(".creditContainer").style.display="contents";
-        //document.querySelector(".onDeliveryContainer").style.display="none";
+        document.querySelector(".onDeliveryContainer").style.display="none";
     } 
 
 });
 onDeliveryBtn.addEventListener("click",()=>{
     if (onDeliveryBtn.checked){
         document.querySelector(".creditContainer").style.display="none";
-        //document.querySelector(".onDeliveryContainer").style.display="contents";
+        document.querySelector(".onDeliveryContainer").style.display="contents";
     } 
 
 });

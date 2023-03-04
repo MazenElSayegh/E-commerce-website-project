@@ -3,13 +3,7 @@
   margin: 0px;
 }
 body {
-  background-image: url(../rescources/bg3.jpeg);
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    ),
-    url(../rescources/bg3.jpeg);
+  background-image: url(../rescources/bg11.jpg);
 
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
@@ -18,9 +12,10 @@ body {
   height: 90vh;
 }
 .layout {
-  border: 5px solid white;
+  border: 0px solid rgb(224, 224, 224);
   border-radius: 10px;
-  box-shadow: -2px -2px 2px 2px;
+  /*box-shadow: -2px -2px 2px 2px; */
+  background-color: rgba(224, 224, 224, 0.5);
 }
 .header {
   font-family: monospace;
@@ -71,10 +66,10 @@ body {
 a {
   text-decoration-line: none;
 
-  color: rgb(51, 51, 255);
+  color: rgb(0, 0, 153);
 }
 a:hover {
-  color: rgb(0, 0, 153);
+  color: rgb(0, 0, 51);
 }
 
 .warning {
