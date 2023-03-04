@@ -80,6 +80,12 @@
 #filterIcon {
   width: 60px;
 }
+#offcanvasRightLabel{
+  color: #6463e2;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+}
 #logoIcon {
   width: 80px;
   /* background-color: #11aeef; */
@@ -254,8 +260,11 @@
 
 /* about */
 
+.blueWord{
+  color:#0d6efd;
+}
+
 #abtSep {
-  width: 60px;
   width: 410px;
   height: 7px;
   background-color: #666;
@@ -266,7 +275,10 @@
   display: flex;
   justify-content: space-around;
   margin: 40px;
+  margin-top: 10vh;
+  /* margin-bottom: 0; */
   background-image: url(rescources/why.jpg);
+  /* background-color: #0192c8; */
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -274,28 +286,32 @@
 .about {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   width: 36vw;
-  background-color: aliceblue;
-  border-radius: 0px;
+  background-color: rgba(240, 248, 255,0.3);
+  border-radius: 20px;
   padding: 40px;
   box-shadow: 3px 7px 7px rgb(164, 196, 223);
   margin-left: 90px;
 }
 .aboutTitle {
-  color: rgb(50, 7, 243);
+  /* color: rgb(50, 7, 243); */
+  color: black;
   font-size: 40px;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif ;*/
   font-weight: bolder;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 4px;
+  margin-bottom: 0;
 }
 .aboutContent {
   font-size: medium;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(0, 0, 0);
+  font-weight: 600;
   opacity: 0.75;
+  margin-top: 0;
 }
 .aboutContainer img {
   width: 520px;
@@ -324,7 +340,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 80vw;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 0px;
     padding: 40px;
     box-shadow: 3px 7px 7px rgb(164, 196, 223);
@@ -356,19 +372,20 @@ body {
     rgb(167, 198, 204) 100%
   ); */
 }
-/* #contactContainer{
-  background-image: url(rescources/why.jpg);
+#contactContainer{
+  /* background-image: url(rescources/why.jpg); */
+  /* background-color: #0192c8; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} */
+}
 .contactTitle {
   color: black;
   font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bolder;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-weight: 500;
   text-align: center;
   margin: 20px;
   /* margin-top: 0; */
@@ -428,7 +445,7 @@ form > div {
   width: 60vw;
   border-radius: 10px;
   height: 45px;
-  background-color: rgb(108, 87, 224);
+  background-color: #0192c8;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 8px;
@@ -447,7 +464,7 @@ label {
   width: 40px;
   color: blue;
 }
-.footer {
+/* .footer {
   background-color: aliceblue;
   width: 65vw;
   display: flex;
@@ -456,7 +473,7 @@ label {
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 3px 7px 7px rgb(164, 196, 223);
-}
+} */
 
 .cont {
   display: flex;
@@ -522,7 +539,7 @@ label {
     width: 72vw;
     border-radius: 10px;
     height: 45px;
-    background-color: rgb(108, 87, 224);
+    background-color:#0192c8;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 8px;
@@ -570,14 +587,15 @@ label {
   display: flex;
   width: 60%;
   height: 70%;
-  border: solid 5px black;
+  /* border: solid 5px black; */
   background-color: white;
-  padding: 10px 0px;
+  padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
   position: relative;
+  border: 5px aliceblue solid;
 }
 
 .productPopSection .imgContainer {
@@ -666,15 +684,23 @@ label {
 
 .exitProdPop {
   position: absolute;
-  top: 13vh;
-  right: 18vw;
-  font-size: 20px;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
+  top: 15vh;
+  right: 20vw;
+  font-size: 30px;
+  padding: 0px 15px;
+  /* background-color: transparent; */
+  color: black;
+  border: 1px solid inherit;
   border-radius: 10%;
   cursor: pointer;
   z-index: 3;
+  text-align: center;
+  background-color: aliceblue;
+}
+.exitProdPop:hover{
+  color: white;
+  background-color: #a80000;
+  
 }
 
 @media (max-width: 800px) {
@@ -685,9 +711,9 @@ label {
   }
 
   .exitProdPop {
-    top: 8vh;
-    right: 17vw;
-    padding: 10px 15px;
+    top: 10vh;
+    right: 19vw;
+    padding: 0px 10px;
   }
 }
 
@@ -777,17 +803,52 @@ label {
   justify-content: center; */
   margin-left: 100px;
   margin-top: 10px;
-
-  margin-bottom: 10px;
+  /* background-color: #6463e2; */
+  background-color: white;
+  border: 4px solid #6463e2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px ;
   /* margin-left: 90px; */
 }
+#proceedBtnWord{
+  /* color: white; */
+  color:#6463e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+#proceedBtnWord:hover{
+  color: white;  
+}
+#proceedBtn:hover {
+  background-color:#6463e2;
+  color: white;
+}
+
+
 #emptyCart {
   width: 100%;
   height: 75vh;
 }
 #contShopping {
+  background-color: white;
+  /* background-color: rgb(100, 101, 254); */
+  border: 4px solid rgb(100, 101, 254);
+  /* color: white; */
+  color: rgb(100, 101, 254);
+  font-weight: 600;
+  border-radius: 30px ;
+}
+#contShopping:hover {
   background-color: rgb(100, 101, 254);
-  color: white;
+  /* background-color: rgb(100, 101, 254); */
+  /* border: 4px solid rgb(100, 101, 254); */
+  /* color: white; */
+  color:white;
+  font-weight: 600;
+  border-radius: 30px ;
 }
 
 /* cart popup */
@@ -857,3 +918,106 @@ label {
 .minus:hover {
   background-color: rgb(0, 0, 204);
 }
+/* Footer */
+#itiOs{
+  color: white;
+  text-decoration: none;
+}
+#itiOs:hover{
+  color: black;
+}
+#endFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0192c8;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight:normal;
+  font-size: 18px;
+}
+.footerDetails{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  color: white;
+  height: 70vh;
+  padding: 6%;
+  gap: 20px;
+}
+.footerDetails img{
+  width: 25px;
+}
+#contactUsFooter span:hover{
+  color: #0192c8;
+  cursor: pointer;
+}
+#addressFooter{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center;  */
+  font-size: 18px;
+  gap: 20px;
+  width: 25%;
+}
+#addressFooter span{
+  color: #666;
+}
+.footerDetails h3{
+  font-weight: 500;
+}
+#contactUsFooter, #followUsFooter, #newsLetter{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 20px;
+}
+#newsLetter> form{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 20px;
+  /* border: #a80000 2px solid; */
+  /* height: 200px; */
+}
+#newsLetter input{
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  border: #212120 1px solid;
+}
+#newsLetter button{
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border: #212120 1px solid;
+  background-color: #0192c8;
+  /* background-color: #05b0ee; */
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#newsLetter button:hover{
+  background-color: #0d6efd;
+}
+#socialDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+#socialDiv span:hover{
+  color: #0192c8;
+  cursor: pointer;
+}
+#socialDiv img{
+  background-color: white;
+  border: #212120 1px solid;
+  border-radius: 50%;
+  width: 40px;
+  padding: 7px;
+}
+/* Footer */

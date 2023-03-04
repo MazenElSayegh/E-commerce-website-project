@@ -64,12 +64,21 @@ body{
     flex-direction: column;
 }
 #placeOrder{
-    background-color: rgb(58, 58, 247);
-    border-style: none;
-    border-radius: 3px;
+    /* background-color: rgb(58, 58, 247); */
+    background-color: #0d6efd;
+    /* background-color: transparent; */
+    /* border: solid #0d6efd 3px; */
     color: aliceblue;
+    /* color: #0d6efd; */
     width: 23vw;
     height: 8vh;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#placeOrder:hover{
+    background-color: #0145ac;
+    /* color: black; */
+    /* font-size: 25px; */
 }
 .cartSummary{
     border-style:solid;

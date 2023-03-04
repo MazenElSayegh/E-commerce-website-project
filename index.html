@@ -223,7 +223,7 @@
     <!-- #region products & filter -->
 
     <section class="productSection" id="productSectionId">
-      <h1 class="contactTitle">Featured Products</h1>
+      <h1 class="contactTitle">Featured <span class="blueWord">Products</span></h1>
       <div class="filterBtnsContainer">
         <div class="filterBtn activeProduct">All</div>
         <div class="filterBtn">Smartphones</div>
@@ -305,8 +305,8 @@
     <!-- contactUs -->
     <!-- #region contactUs -->
     <div class="contactContainer" id="contactContainer">
-      <div class="contactTitle">Get in touch</div>
-      <div class="form">
+      <div class="contactTitle">Get in <span class="blueWord">touch</span></div>
+      <div class="form" >
         <form name="contactForm" onsubmit="return validateForm()">
           <div class="name">
             <label>Name</label>
@@ -347,200 +347,140 @@
             <a href="#"
               ><input type="submit" id="sub" value="SUBMIT"
               data-bs-toggle="modal" data-bs-target="#submitFormModal"
-              //onclick="validateForm()" /></a
+              onclick="validateForm()" /></a
             >
           </div>
         </form>
       </div>
       <!-- #endregion  -->
       <!-- Contact Us -->
-      <!-- Footer -->
-      <!-- #region footer -->
-      <div class="footer">
-        <div class="cont">
-          <div class="loc">
-            <img src="rescources/location.png" />
-            <div style="margin-top: 20px; font-size: 18px">
-              104 Street 2765 Don
-            </div>
-          </div>
-          <div class="phone">
-            <img src="rescources/calling.png" />
-            <div style="margin-top: 20px; font-size: 18px">03-54321568</div>
-          </div>
-          <div class="e-mail">
-            <img src="rescources/mail.png" />
-            <div style="margin-top: 20px; font-size: 18px">
-              example@example.com
-            </div>
-          </div>
-        </div>
-        <div class="social">
-          <div>
-            <a href="https://www.facebook.com"
-              ><img src="rescources/facebook.png" style="width: 35px"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.twitter.com"
-              ><img src="rescources/twitter.png" style="width: 35px"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com"
-              ><img src="rescources/instagram.png" style="width: 35px"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.youtube.com"
-              ><img src="rescources/youtube.png" style="width: 35px"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- #endregion  -->
-    <!-- -------------------- cart popUP ------------------------  -->
-    <!-- #region cart popup -->
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Details</h5>
-        <!-- <img src="rescources/cart.png" style="width: 35px" /> -->
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <!-- <div id="addedProducts"></div> -->
-        <div id="noProducts" class="">
-          <img src="rescources/emptycart.jpeg" id="emptyCart" /><button
-            id="contShopping"
-            class="btn position-relative bottom-0 start-50 translate-middle-x"
+
+      <!-- -------------------- cart popUP ------------------------  -->
+      <!-- #region cart popup -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Details</h5>
+          <!-- <img src="rescources/cart.png" style="width: 35px" /> -->
+          <button
+            type="button"
+            class="btn-close"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          >
-            Continue Shopping
-          </button>
+          ></button>
         </div>
-        <div id="addedToCart" class="turnOff">
-          <div id="addedProducts"></div>
+        <div class="offcanvas-body">
+          <!-- <div id="addedProducts"></div> -->
+          <div id="noProducts" class="">
+            <img src="rescources/emptycart.jpeg" id="emptyCart" /><button
+              id="contShopping"
+              class="btn position-relative bottom-0 start-50 translate-middle-x"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              Continue Shopping
+            </button>
+          </div>
+          <div id="addedToCart" class="turnOff">
+            <div id="addedProducts"></div>
 
-          <button class="btn btn-primary" id="proceedBtn">
-            <a href="checkout/checkout.html">Proceed</a>
-          </button>
+            <button class="btn" id="proceedBtn">
+              <a href="checkout/checkout.html" id="proceedBtnWord">Proceed</a>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- #endregion  -->
-    <!-- Cart Popup -->
+      <!-- #endregion  -->
+      <!-- Cart Popup -->
 
-    <!-- Product Popup -->
-    <!-- #region product popup -->
-    <section class="productPopSection">
-      <div class="exitProdPop">x</div>
-      <div class="productPopContainer">
-        <div class="imgContainer">
-          <img
-            src="https://omalkura.com/wp-content/uploads/2021/08/samsung-galaxy-a02-0.jpg"
-            alt=""
-          />
-        </div>
-
-        <div class="prodDetailsContainer">
-          <h1 class="prodTitle">Samsung A32</h1>
-          <hr />
-
-          <div class="prodBrand">Apple</div>
-          <div class="prodRating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
+      <!-- Product Popup -->
+      <!-- #region product popup -->
+      <section class="productPopSection">
+        <div class="exitProdPop">x</div>
+        <div class="productPopContainer">
+          <div class="imgContainer">
+            <img
+              src="https://omalkura.com/wp-content/uploads/2021/08/samsung-galaxy-a02-0.jpg"
+              alt=""
+            />
           </div>
 
-          <h3 class="prodDesc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
-            quis.
-          </h3>
-          <hr />
-          <div class="price_discountContainer">
-            <div class="discount">-9%</div>
-            <div class="price">$1000</div>
-          </div>
+          <div class="prodDetailsContainer">
+            <h1 class="prodTitle">Samsung A32</h1>
+            <hr />
 
-          <div class="productOrderForm">
-            <div class="prodCountContainer">
-              Quantity:
-              <input type="number" class="prodOrderCount" value="1" min="1" />
+            <div class="prodBrand">Apple</div>
+            <div class="prodRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
             </div>
-            <button class="prodOrderBtn" id="addCartBtn">Add to Cart</button>
-          </div>
-          <p id="popupAccount">
-            you need to <a href="SignUp/SignUp.html">SignUp</a> or
-            <a href="Login/login.html">Login</a>
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- #endregion  -->
+            <h3 class="prodDesc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Incidunt, quis.
+            </h3>
+            <hr />
+            <div class="price_discountContainer">
+              <div class="discount">-9%</div>
+              <div class="price">$1000</div>
+            </div>
 
-    <!-- black footer-->
-
-    <div class="container-fluid bg-dark">
-      <div class="container w-75">
-        <div class="row mt-3">
-          <div class="pt-5 col-sm-12 col-md-12 col-lg-3">
-            <h3 class="text-light">About</h3>
-
-            <p class="text-white-50">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+            <div class="productOrderForm">
+              <div class="prodCountContainer">
+                Quantity:
+                <input type="number" class="prodOrderCount" value="1" min="1" />
+              </div>
+              <button class="prodOrderBtn" id="addCartBtn">Add to Cart</button>
+            </div>
+            <p id="popupAccount">
+              you need to <a href="SignUp/SignUp.html">SignUp</a> or
+              <a href="Login/login.html">Login</a>
             </p>
           </div>
-          <div class="pt-5 col-sm-12 col-md-12 col-lg-3 offset-lg-1">
-            <h3 class="text-light">Blogroll</h3>
+        </div>
+      </section>
 
-            <ul class="text-white-50">
-              <li>NETTUTS+</li>
-              <li>FreelanceSwitch</li>
-              <li>In The Woods</li>
-              <li>Netsetter</li>
-              <li>PSDTUTS+</li>
-            </ul>
-          </div>
-
-          <div class="pt-5 col-sm-12 col-md-12 col-lg-3 offset-lg-1">
-            <h3 class="text-light">Popular</h3>
-
-            <ul class="text-white-50">
-              <li>This is the title of a blog post</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipisicing elit, sed do eiusmod</li>
-              <li>Duis aute irure dolor</li>
-              <li>Excepteur sint occaecat cupidatat</li>
-              <li>Reprehenderit in voluptate velit</li>
-              <li>Officia deserunt mollit anim id est laborum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-            </ul>
-          </div>
+      <!-- #endregion  -->
+      <!-- Footer  -->
+    <div class="footerDetails bg-dark">
+      <div id="addressFooter">
+        <h3>Address</h3>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus quae nobis est nesciunt accusantium itaque unde, magnam neque corporis libero eum dolores quisquam eaque doloremque officia rem adipisci ipsam!</span>
+      </div>
+      <div id="contactUsFooter">
+        <h3>Contact Us</h3>
+        <span><img src="rescources/calling.png">&nbsp;&nbsp;&nbsp;03-54321568</span>
+        <span><img src="rescources/mail.png">&nbsp;&nbsp;&nbsp;oshop@gmail.com</span>
+      </div>
+      <div id="followUsFooter">
+        <h3>Follow Us</h3>
+        <div id="socialDiv">
+          <span><img src="rescources/fb.png">&nbsp;&nbsp;Facebook</span>
+          <span><img src="rescources/tweet.png">&nbsp;&nbsp;Twitter</span>
+          <span><img src="rescources/you.png">&nbsp;&nbsp;Youtube</span>
+          <span><img src="rescources/in.png">&nbsp;&nbsp;Linkedin</span>
+          <span><img src="rescources/inst.png">&nbsp;&nbsp;instagram</span>
         </div>
       </div>
+      <div id="newsLetter">
+        <h3>Newsletter</h3>
+        <Form>
+          <input type="text" placeholder="Enter your Email">
+          <button id="subsBtn">Subscribe</button>
+        </Form>
+      </div>
     </div>
+    <div id="endFooter">
+      Copyright 2023 All Right Reserved By&nbsp;<a id="itiOs" href="https://github.com/MazenElSayegh/E-commerce-website-project">ITI-OS43</a> 
+    </div>
+    <!-- #endregion  -->
 
     <!-- Modal 1111 -->
     <div
