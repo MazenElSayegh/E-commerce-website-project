@@ -18,23 +18,25 @@
     <link rel="stylesheet" href="checkout.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
 </head>
-<body>
+<body onload="checkoutDetails()">
     <div class="checkoutContainer">
         <div class="paymentDetails">
+        
         <h1>Payment details</h1>
+        <div class="radioCont">
+        <input type="radio" name="paymentMethod" id="onDeliveryMethod"/>
+        <label for="onDeliveryMethod" id="credit">&nbsp;&nbsp;Cash on delivery</label></div> 
+        <div class="onDeliveryContainer">
         <div class="country"><label>Country</label><input name="name" id="countryInp" type="text" placeholder="Country" /></div>
         <div class="add"><div class="city"><label>City</label><input name="name" id="cityInp" type="text" placeholder="City" /></div>
         <div class="street"><label>Street</label><input name="name" id="streetInp" type="text" placeholder="Street" /></div></div>
         <div class="postalCode"><label>Postal Code</label><input name="name" id="postalCodeInp" type="text" placeholder="Postal Code" /></div>
-        <div class="accordion  mt-3 w-75" id="Comments">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="Comments-headingOne">
-              <button class="accordion-button fw-semibold fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Comments-collapseOne" aria-expanded="false" aria-controls="Comments-collapseOne">
-                Credit Card
-              </button>
-            </h2>
-            <div id="Comments-collapseOne" class="accordion-collapse collapse pt-4 border-3" aria-labelledby="Comments-headingOne">
-              <div class="accordion-body">
+        </div>
+        <div class="radioCont">      
+        <input type="radio" name="paymentMethod" id="creditMethod"/>
+                <label for="onDeliveryMethod" id="credit">&nbsp;&nbsp;Credit Card</label> </div>
+              
+                <div class="creditContainer">
                 <div class="nameCard"><label>Name on card</label><input name="name" id="nameInp" type="text" placeholder="Name" /></div>
                 
                   <div class="cardNum"><label>Card Number</label><input name="name" id="numInp" type="text" placeholder="Card Number" /></div>
@@ -43,9 +45,6 @@
                   <div class="expiry"><label>Expiry</label><input name="name" id="exInp" type="text" /></div>
                 </div>
                 </div>
-        </div>
-      </div>
-    </div>
     <div class="placeOrder">
       <a href="#"
         ><input
@@ -53,7 +52,7 @@
           id="placeOrder"
           value="Place Order"
       /></a>
-  </div></div><div class="cartSummary"><h1>Cart Summary</h1><div class="prods"></div><hr><div id="totalP">total:</div></div></div>
+  </div></div><div class="cartSummary"><h1>Cart Summary</h1><div class="prods"></div><hr><div id="totalP"><div id="subTotal"></div><div id="tax"></div><div id="shipment"></div><div id="totalFinal"></div></div></div></div>
     <script src="checkout.js"></script>
 </body>
 </html>
