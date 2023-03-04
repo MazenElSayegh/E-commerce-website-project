@@ -1020,4 +1020,41 @@ label {
   width: 40px;
   padding: 7px;
 }
+
+@media (min-width: 0px) and (max-width: 850px) {
+  .footerDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    color: white;
+    padding: 9%;
+    gap: 20px;
+    height: fit-content;
+    width: 100vw;
+  }
+  .footerDetails>div{
+    margin-top: 5vh;
+  }
+  #addressFooter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center;  */
+    font-size: 18px;
+    gap: 20px;
+    width: 70vw;
+  }
+  #addressFooter span{
+    color: #666;
+  }
+  .footerDetails h3{
+    font-weight: 500;
+  }
+  #endFooter{
+    width: 100vw;
+  }
+
+  
+}
 /* Footer */
