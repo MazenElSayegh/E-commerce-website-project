@@ -1,21 +1,50 @@
-function printError(elemId, hintMsg) {
-  document.getElementById(elemId).innerHTML = hintMsg;
-}
 
-function validateForm() {
-  var email = document.getElementById("email");
-  if (email.value == "") {
-    printError("emailErr", "Please enter your email address");
-  } else {
-    // Regular expression for basic email validation
-    var regex = /^\S+@\S+\.\S+$/;
-    if (regex.test(email.value) === false) {
-      printError("emailErr", "Please enter a valid email address");
-    } else {
-      printError("emailErr", "");
-    }
-  }
+
+let bodyedit =document.querySelector("#bodyEdit");
+let email = document.querySelector("#email");
+let contactForm = document.querySelector("#contactForm")
+function printError(emailErr, hintMsg) {
+  document.getElementById(emailErr).innerHTML = hintMsg;
 }
+contactForm.addEventListener("submit",textCheck);
+function textCheck(e){
+  e.preventDefault();
+  let regex = /^\S+@\S+\.\S+$/;
+  console.log("inside funvtion");
+  if(email.value == "" ){
+      bodyedit.innerHTML="please enter email";
+      bodyedit.classList="alert alert-danger"
+      console.log("inside emptu");
+  }
+  
+  else if (regex.test(email.value) === false) {
+    bodyedit.classList="alert alert-danger"
+    bodyedit.innerHTML="please enter a valid email"
+    console.log("inside invalid");
+  }
+  
+  else {
+    bodyedit.classList="alert alert-success"  
+    bodyedit.innerHTML="we recieved your message"
+      console.log("inside else");
+  }
+
+}
+// function validateForm() {
+  
+//   var email = document.getElementById("email");
+//   if (email.value == "") {
+//     printError("emailErr", "Please enter your email address");
+//   } else {
+//     // Regular expression for basic email validation
+//     var regex = /^\S+@\S+\.\S+$/;
+//     if (regex.test(email.value) === false) {
+//       printError("emailErr", "Please enter a valid email address");
+//     } else {
+//       printError("emailErr", "");
+//     }
+//   }
+// }
 
 function disableSubmit() {
   let userName = document.getElementById("userName");
