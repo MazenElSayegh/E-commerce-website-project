@@ -1,5 +1,5 @@
 
-
+let message=document.getElementById("message");
 let bodyedit =document.querySelector("#bodyEdit");
 let email = document.querySelector("#email");
 let contactForm = document.querySelector("#contactForm")
@@ -12,20 +12,22 @@ function textCheck(e){
   let regex = /^\S+@\S+\.\S+$/;
   console.log("inside funvtion");
   if(email.value == "" ){
-      bodyedit.innerHTML="please enter email";
+      bodyedit.innerHTML="Please enter email";
       bodyedit.classList="alert alert-danger"
       // console.log("inside emptu");
-  }
-  
+  }  
   else if (regex.test(email.value) === false) {
     bodyedit.classList="alert alert-danger"
-    bodyedit.innerHTML="please enter a valid email"
+    bodyedit.innerHTML="Please enter a valid email"
     // console.log("inside invalid");
   }
-  
+  else if(message.value==""){
+    bodyedit.innerHTML="Please enter a message";
+    bodyedit.classList="alert alert-danger";
+  }  
   else {
     bodyedit.classList="alert alert-success"  
-    bodyedit.innerHTML="we recieved your message"
+    bodyedit.innerHTML="We recieved your message"
       // console.log("inside else");
   }
 

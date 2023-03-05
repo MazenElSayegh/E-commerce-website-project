@@ -1061,3 +1061,19 @@ label {
   }
 }
 /* Footer */
+/* Modal  */
+.tickWord{
+  color: white;
+  font-weight: 600;
+  background-color: rgb(3, 156, 3);
+  border: 1px solid #666;
+  border-radius: 50%;
+}
+.modalContainer{
+  width: 200px !important;
+  text-align: center;
+}
+.modalContainer2{
+  width: 300px !important;
+  text-align: center;
+}
