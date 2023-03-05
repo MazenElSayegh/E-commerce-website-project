@@ -821,14 +821,12 @@ label {
   text-decoration: none;
   font-weight: 600;
 }
-#proceedBtnWord:hover {
-  color: white;
-}
 #proceedBtn:hover {
   background-color: #6463e2;
+}
+#proceedBtn:hover #proceedBtnWord {
   color: white;
 }
-
 #emptyCart {
   width: 100%;
   height: 75vh;
