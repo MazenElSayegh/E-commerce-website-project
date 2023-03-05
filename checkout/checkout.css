@@ -85,10 +85,10 @@ body {
   text-decoration: none;
   width: 100px;
   /* color: black; */
-  color: #0145ac ;
+  color: rgb(70, 69, 69) ;
 }
 #backToHome:hover{
-  color: black;
+  color: #0d6efd;
 }
 #placeOrder:hover {
   background-color: #0145ac;
