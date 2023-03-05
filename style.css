@@ -1022,9 +1022,12 @@ label {
   width: 40px;
   padding: 7px;
 }
+/* }#socialDiv img:hover {
+  background-color: #0192c8;
+} */
 
 @media (min-width: 0px) and (max-width: 850px) {
-  .footerDetails{
+  .footerDetails {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1035,10 +1038,10 @@ label {
     height: fit-content;
     width: 100vw;
   }
-  .footerDetails>div{
+  .footerDetails > div {
     margin-top: 5vh;
   }
-  #addressFooter{
+  #addressFooter {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -1047,16 +1050,14 @@ label {
     gap: 20px;
     width: 70vw;
   }
-  #addressFooter span{
+  #addressFooter span {
     color: #666;
   }
-  .footerDetails h3{
+  .footerDetails h3 {
     font-weight: 500;
   }
-  #endFooter{
+  #endFooter {
     width: 100vw;
   }
-
-  
 }
 /* Footer */

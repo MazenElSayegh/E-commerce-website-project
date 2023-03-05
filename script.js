@@ -5,7 +5,6 @@ document.addEventListener("scroll", (e) => {
   if (scrollValue > 360) {
     // navBar.style.backgroundColor = "#11aeef";
     navBar.style.backgroundColor = "#05b0ee";
-    
   } else {
     navBar.style.backgroundColor = "transparent";
     // navBar.classList.remove(".navbarChangeColor");

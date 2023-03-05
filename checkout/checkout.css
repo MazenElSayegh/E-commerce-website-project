@@ -1,268 +1,280 @@
-body{
-    background-color: rgb(232, 253, 253);
+body {
+  background-color: rgb(232, 253, 253);
 }
 
-.checkoutContainer{
+.checkoutContainer {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
 }
-.paymentDetails{
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24.5vw;
+  height: fit-content;
+}
+
+.country,
+.city,
+.postalCode,
+.street {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.paymentDetails div {
+  margin-bottom: 10px;
+}
+#countryInp,
+#postalCodeInp {
+  width: 23vw;
+  height: 30px;
+}
+.add {
+  display: flex;
+}
+#cityInp,
+#streetInp {
+  width: 11.2vw;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nameInp,
+#numInp {
+  width: 23vw;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#cvvInp,
+#exInp {
+  width: 8vw;
+  height: 30px;
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.nameCard,
+.cardNum,
+.cvv,
+.expiry {
+  display: flex;
+  flex-direction: column;
+}
+#placeOrder {
+  /* background-color: rgb(58, 58, 247); */
+  background-color: #0d6efd;
+  /* background-color: transparent; */
+  /* border: solid #0d6efd 3px; */
+  color: aliceblue;
+  /* color: #0d6efd; */
+  width: 23vw;
+  height: 8vh;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#placeOrder:hover {
+  background-color: #0145ac;
+  /* color: black; */
+  /* font-size: 25px; */
+}
+.cartSummary {
+  border-style: solid;
+  padding: 10px;
+  width: 45vw;
+  border-color: rgb(215, 215, 253);
+  border-radius: 20px;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cartSummary > h1 {
+  margin-bottom: 20px;
+}
+hr {
+  width: 30vw;
+  height: 0.25vh;
+  background-color: black;
+  align-self: center;
+}
+input {
+  border-radius: 4px;
+  background-color: rgb(215, 215, 253);
+  border-style: none;
+  padding: 5px;
+}
+input[type="password"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.185em;
+  font-size: 20px;
+}
+@media (min-width: 0px) and (max-width: 1050px) {
+  .checkoutContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 24.5vw;
-    height: fit-content;
-    
-}
-
-.country,.city,.postalCode,.street{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-}
-.paymentDetails div{
-    margin-bottom: 10px;
-}
-#countryInp,#postalCodeInp{
-    width: 23vw;
-    height: 30px;
-}
-.add{
-    display: flex;
-}
-#cityInp,#streetInp{
-    width: 11.2vw;
-    height: 30px;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-.cardInfo{
-    display: flex;
-    justify-content: space-between;
-}
-
-#nameInp,#numInp{
-    width: 23vw;
-    height: 30px;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-
-#cvvInp,#exInp{
-    width: 8vw;
-    height: 30px;
-    margin-top: 2px;
-    margin-right: 10px;
-}
-.nameCard,.cardNum,.cvv,.expiry{
-    display: flex;
-    flex-direction: column;
-}
-#placeOrder{
-    /* background-color: rgb(58, 58, 247); */
-    background-color: #0d6efd;
-    /* background-color: transparent; */
-    /* border: solid #0d6efd 3px; */
-    color: aliceblue;
-    /* color: #0d6efd; */
-    width: 23vw;
-    height: 8vh;
-    font-size: 20px;
-    border-radius: 10px;
-}
-#placeOrder:hover{
-    background-color: #0145ac;
-    /* color: black; */
-    /* font-size: 25px; */
-}
-.cartSummary{
-    border-style:solid;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .cartSummary {
+    border-style: solid;
     padding: 10px;
-    width: 45vw;
+    width: 75vw;
     border-color: rgb(215, 215, 253);
     border-radius: 20px;
     border-width: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-}
-.cartSummary>h1{
-    margin-bottom: 20px;
-}
-hr{
-    width: 30vw;
+  }
+  .paymentDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 87vw;
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+  }
+  hr {
+    width: 70vw;
     height: 0.25vh;
     background-color: black;
     align-self: center;
-    
-}
-input{
-    border-radius: 4px;
-    background-color: rgb(215, 215, 253);
+  }
+  #placeOrder {
+    background-color: rgb(58, 58, 247);
     border-style: none;
-    padding: 5px;
+    border-radius: 3px;
+    color: aliceblue;
+    width: 63vw;
+    height: 8vh;
+  }
+  #nameInp,
+  #numInp {
+    width: 61vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  #cvvInp,
+  #exInp {
+    width: 30vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  #countryInp,
+  #postalCodeInp {
+    width: 62vw;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .add {
+    display: flex;
+  }
+  #cityInp,
+  #streetInp {
+    width: 29.5vw;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  .radioCont {
+    background-color: azure;
+    border-style: solid;
+    border-color: rgb(215, 217, 252);
+    border-radius: 10px;
+    border-width: 2px;
+    width: 64vw;
+  }
+  .onDeliveryContainer,
+  .creditContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #cartItemContainer {
+    width: 65vw;
+    padding: 1.5vw;
+  }
 }
-input[type='password']{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.185em;
-    font-size: 20px;
+.onDeliveryContainer {
+  display: content;
 }
-@media (min-width: 0px) and (max-width: 1050px) {
-    .checkoutContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 30px;
-      }
-      .cartSummary{
-        border-style:solid;
-        padding: 10px;
-        width: 75vw;
-        border-color: rgb(215, 215, 253);
-        border-radius: 20px;
-        border-width: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .paymentDetails{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 87vw;
-        height: fit-content;
-        padding: 10px;
-        align-items: center;
-    }
-    hr{
-        width: 70vw;
-        height: 0.25vh;
-        background-color: black;
-        align-self: center;
-        
-    }
-    #placeOrder{
-        background-color: rgb(58, 58, 247);
-        border-style: none;
-        border-radius: 3px;
-        color: aliceblue;
-        width: 63vw;
-        height: 8vh;
-    }
-    #nameInp,#numInp{
-        width: 61vw;
-        height: 30px;
-        margin-top: 5px;
-        margin-right: 10px;
-    }
-    
-    #cvvInp,#exInp{
-        width: 30vw;
-        height: 30px;
-        margin-top: 5px;
-        margin-right: 10px;
-    }
-    #countryInp,#postalCodeInp{
-        width: 62vw;
-        height: 30px;
-        margin-top: 5px;
-    }
-    .add{
-        display: flex;
-    }
-    #cityInp,#streetInp{
-        width: 29.5vw;
-        height: 30px;
-        margin-top: 5px;
-        margin-right: 10px;
-    }
-    .radioCont{
-        background-color: azure;
-        border-style: solid;
-        border-color: rgb(215, 217, 252);
-        border-radius: 10px;
-        border-width: 2px;
-        width: 64vw;
-    }
-    .onDeliveryContainer,.creditContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #cartItemContainer{
-        width: 65vw;
-        padding: 1.5vw;
-    }
-    }
-    .onDeliveryContainer{
-        display: content;
-    }
-    .creditContainer{
-        display: none;
-    }
-    .radioCont{
-        background-color: azure;
-        padding: 12px;
-        border-style: solid;
-        border-color: rgb(215, 217, 252);
-        border-radius: 10px;
-        border-width: 2px;
-    }
-    h1{
-        margin-bottom: 10px;
-    }
-    #cartItemContainer{
-        display:flex;
-        justify-content: space-between;
-        background-color: azure;
-        box-shadow: 3px 3px 7px rgb(188, 188, 247);
-        /*padding-top: 30px;
+.creditContainer {
+  display: none;
+}
+.radioCont {
+  background-color: azure;
+  padding: 12px;
+  border-style: solid;
+  border-color: rgb(215, 217, 252);
+  border-radius: 10px;
+  border-width: 2px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+#cartItemContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  box-shadow: 3px 3px 7px rgb(188, 188, 247);
+  /*padding-top: 30px;
         padding-left: 30px;*/
-        margin-bottom: 20px;
-        padding: 1.5vw;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 13px;
-    }
-    #itemImage{
-        width: 130px;
-        height: 80px;
-        margin-right: 3vw;
-    }
-    .priceData{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .prodName{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-inline: 3vw;
-        font-weight: bold;
-    }
-    #itemTP{
-        font-weight: bold;
-    }
-    #totalP{
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    
-    }
-    #subTotal,#tax,#shipment{
-        font-size: 15px;
-    }
-    #totalFinal{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-    #totalP>div{
-        margin:7px
-    }
-    
+  margin-bottom: 20px;
+  padding: 1.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+}
+#itemImage {
+  width: 130px;
+  height: 80px;
+  margin-right: 3vw;
+}
+.priceData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.prodName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 3vw;
+  font-weight: bold;
+}
+#itemTP {
+  font-weight: bold;
+}
+#totalP {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#subTotal,
+#tax,
+#shipment {
+  font-size: 15px;
+}
+#totalFinal {
+  font-size: 20px;
+  font-weight: bolder;
+}
+#totalP > div {
+  margin: 7px;
+}

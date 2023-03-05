@@ -22,18 +22,18 @@ function disableSubmit() {
   let account = document.getElementById("account");
   var noProducts = document.getElementById("noProducts");
   let addedToCart = document.getElementById("addedToCart");
-  
+
   // if (JSON.parse(localStorage.getItem("ProductDetails")) != null) {
   //   let productsData = JSON.parse(localStorage.getItem("ProductDetails"));
   //   let checkEmail = JSON.parse(localStorage.getItem("tempData")).email;
   //   let flag=0;
   //   for (let i = 0; i < productsData.length; i++) {
   //     if (data[i].email == checkEmail) {
-      // addedToCart.classList.remove("turnOff");
-      // addedToCart.classList.add("addedToCartOn");
-      // noProducts.classList.add("turnOff");
-      // flag=1;
-      // break;
+  // addedToCart.classList.remove("turnOff");
+  // addedToCart.classList.add("addedToCartOn");
+  // noProducts.classList.add("turnOff");
+  // flag=1;
+  // break;
   //     }
   //   }
   //   if(flag==0){
@@ -42,7 +42,7 @@ function disableSubmit() {
   //     addedToCart.classList.remove("addedToCartOn");
   //   }
   // }
-  
+
   document.getElementById("sub").disabled = true;
   document.getElementById("sub").style.opacity = 0.5;
   if (JSON.parse(localStorage.getItem("tempData")) != null) {
