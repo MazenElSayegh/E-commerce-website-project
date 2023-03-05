@@ -14,19 +14,19 @@ function textCheck(e){
   if(email.value == "" ){
       bodyedit.innerHTML="please enter email";
       bodyedit.classList="alert alert-danger"
-      console.log("inside emptu");
+      // console.log("inside emptu");
   }
   
   else if (regex.test(email.value) === false) {
     bodyedit.classList="alert alert-danger"
     bodyedit.innerHTML="please enter a valid email"
-    console.log("inside invalid");
+    // console.log("inside invalid");
   }
   
   else {
     bodyedit.classList="alert alert-success"  
     bodyedit.innerHTML="we recieved your message"
-      console.log("inside else");
+      // console.log("inside else");
   }
 
 }
