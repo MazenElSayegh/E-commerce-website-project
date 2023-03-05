@@ -1,3 +1,17 @@
+if (localStorage.getItem("tempData") != null) {
+  let addToCartBtn = document.querySelector("#addCartBtn");
+  addToCartBtn.setAttribute("data-bs-toggle", "modal");
+  addToCartBtn.setAttribute("data-bs-target", "#exampleModal");
+
+  addToCartBtn.addEventListener("click", hideProductPopupFromAddBtn);
+} else {
+  let addToCartBtn = document.querySelector("#addCartBtn");
+  addToCartBtn.removeAttribute("data-bs-toggle");
+  addToCartBtn.removeAttribute("data-bs-target");
+
+  addToCartBtn.removeEventListener("click", hideProductPopupFromAddBtn);
+}
+
 function getRightArray(element) {
   if (element.classList.contains("mobileProd")) return "phonesArr";
   if (element.classList.contains("laptopProd")) return "lapArr";
@@ -84,9 +98,6 @@ function accountCart() {
   let account = document.getElementById("account");
   let popupAccount = document.getElementById("popupAccount");
   let prodOrderCount = document.getElementsByClassName("prodOrderCount");
-  let addToCartBtn = document.querySelector("#addCartBtn");
-  addToCartBtn.removeAttribute("data-bs-toggle");
-  addToCartBtn.removeAttribute("data-bs-target");
   if (JSON.parse(localStorage.getItem("t")) != null) {
     var d = JSON.parse(localStorage.getItem("t"));
 
@@ -105,20 +116,8 @@ function accountCart() {
       });
 
       localStorage.setItem("ProductDetails", JSON.stringify(producet_records));
-      let addToCartBtn = document.querySelector("#addCartBtn");
-      addToCartBtn.setAttribute("data-bs-toggle", "modal");
-      addToCartBtn.setAttribute("data-bs-target", "#exampleModal");
-
-      addToCartBtn.addEventListener("click", hideProductPopupFromAddBtn);
-      console.log("on");
     } else if (userName.classList.contains("turnOff")) {
       popupAccount.style.visibility = "visible";
-      let addToCartBtn = document.querySelector("#addCartBtn");
-      addToCartBtn.removeAttribute("data-bs-toggle");
-      addToCartBtn.removeAttribute("data-bs-target");
-
-      addToCartBtn.removeEventListener("click", hideProductPopupFromAddBtn);
-      console.log("off");
     }
   }
 }

@@ -68,6 +68,7 @@ function accountSignOut() {
   addedToCart.classList.add("turnOff");
   noProducts.classList.remove("turnOff");
   addedToCart.classList.remove("addedToCartOn");
+  location.reload();
 }
 
 function activateButton(element) {
