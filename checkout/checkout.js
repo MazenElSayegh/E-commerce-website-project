@@ -71,3 +71,64 @@ function checkoutDetails() {
     }
   }
 }
+
+let bodyedit =document.querySelector("#bodyEdit");
+let checkoutForm = document.querySelector("#checkoutForm");
+let countryInp = document.querySelector("#countryInp");
+let cityInp = document.querySelector("#cityInp");
+let streetInp = document.querySelector("#streetInp");
+let postalCodeInp = document.querySelector("#postalCodeInp");
+let nameInp = document.querySelector("#nameInp");
+let numInp = document.querySelector("#numInp");
+let cvvInp = document.querySelector("#cvvInp");
+let exInp = document.querySelector("#exInp");
+
+
+
+
+
+checkoutForm.addEventListener("submit",textCheck);
+
+function textCheck(e){
+  e.preventDefault();
+let regex = /^\S+@\S+\.\S+$/;
+  console.log("inside funvtion");
+  if(onDeliveryBtn.checked ){
+    if(countryInp.value == "" || cityInp.value == "" || streetInp.value == "" || postalCodeInp.value == "" ){
+      bodyedit.innerHTML="please enter full data";
+      bodyedit.classList="alert alert-danger"
+      console.log("inside emptu");
+    }else{
+      bodyedit.classList="alert alert-success"  
+      bodyedit.innerHTML="Order Placed"
+    }
+
+  } else if ( creditBtn.checked){
+    let regex1 = /^1?(\d{16})/;
+    let regex2 = /^1?(\d{3})/;
+    console.log("inside credit");
+      if(nameInp.value == "" || numInp.value== "" || cvvInp.value== "" || exInp.value == ""){
+        console.log("inside empty credit");
+        bodyedit.innerHTML="please enter credit card data ";
+        bodyedit.classList="alert alert-danger"
+      }
+      else if (regex1.test(numInp.value)==false || regex2.test(cvvInp.value)==false ){
+        console.log("inside wrong credit");
+        bodyedit.innerHTML="please enter correct card or cvv number ";
+        bodyedit.classList="alert alert-danger"
+    
+    }else {
+      bodyedit.classList="alert alert-success"  
+      bodyedit.innerHTML="order placed"
+        // console.log("inside else");
+    }
+      
+  }else if(creditBtn.checked != true && onDeliveryBtn.checked != true){
+    bodyedit.classList="alert alert-danger"  
+    bodyedit.innerHTML="choose a payment method"
+  }
+  
+
+  
+
+}
