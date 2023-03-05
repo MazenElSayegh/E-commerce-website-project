@@ -94,6 +94,11 @@ let addCartBtn = document.getElementById("addCartBtn");
 addCartBtn.addEventListener("click", accountCart);
 
 function accountCart() {
+  setTimeout(function(){
+    //$("#bodyEdit").hide();
+    $(".fade").fadeOut();
+}, 
+3000)
   let userName = document.getElementById("userName");
   let account = document.getElementById("account");
   let popupAccount = document.getElementById("popupAccount");

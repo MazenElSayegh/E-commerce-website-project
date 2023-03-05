@@ -28,6 +28,11 @@ function textCheck(e){
   else {
     bodyedit.classList="alert alert-success"  
     bodyedit.innerHTML="We recieved your message"
+    setTimeout(function(){
+      //$("#bodyEdit").hide();
+      $(".fade").fadeOut();
+  }, 
+  5000)
       // console.log("inside else");
   }
 

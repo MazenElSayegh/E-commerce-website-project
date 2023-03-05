@@ -97,10 +97,20 @@ function proceedCheck(e){
     if(countryInp.value == "" || cityInp.value == "" || streetInp.value == "" || postalCodeInp.value == "" ){
       bodyedit.innerHTML="please enter full data";
       bodyedit.classList="alert alert-danger"
+      setTimeout(function(){
+        //$("#bodyEdit").hide();
+        $(".fade").fadeOut();
+    }, 
+    3000)
       // console.log("inside emptu");
     }else{
       bodyedit.classList="alert alert-success"  
       bodyedit.innerHTML="Order Placed"
+      setTimeout(function(){
+        //$("#bodyEdit").hide();
+        $(".fade").fadeOut();
+    }, 
+    3000)
     }
 
   } else if ( creditBtn.checked){
@@ -111,21 +121,41 @@ function proceedCheck(e){
         // console.log("inside empty credit");
         bodyedit.innerHTML="please enter credit card data ";
         bodyedit.classList="alert alert-danger"
+        setTimeout(function(){
+          //$("#bodyEdit").hide();
+          $(".fade").fadeOut();
+      }, 
+      3000)
       }
       else if (regex1.test(numInp.value)==false || regex2.test(cvvInp.value)==false ){
         // console.log("inside wrong credit");
         bodyedit.innerHTML="please enter correct card and cvv number ";
         bodyedit.classList="alert alert-danger"
+        setTimeout(function(){
+          //$("#bodyEdit").hide();
+          $(".fade").fadeOut();
+      }, 
+      3000)
     
     }else {
       bodyedit.classList="alert alert-success"  
       bodyedit.innerHTML="order placed"
+      setTimeout(function(){
+        //$("#bodyEdit").hide();
+        $(".fade").fadeOut();
+    }, 
+    3000)
         // console.log("inside else");
     }
       
   }else if(creditBtn.checked != true && onDeliveryBtn.checked != true){
     bodyedit.classList="alert alert-danger"  
     bodyedit.innerHTML="choose a payment method"
+    setTimeout(function(){
+      //$("#bodyEdit").hide();
+      $(".fade").fadeOut();
+  }, 
+  3000)
   }
   
 
