@@ -87,17 +87,17 @@ let exInp = document.querySelector("#exInp");
 
 
 
-checkoutForm.addEventListener("submit",textCheck);
+checkoutForm.addEventListener("submit",proceedCheck);
 
-function textCheck(e){
+function proceedCheck(e){
   e.preventDefault();
-let regex = /^\S+@\S+\.\S+$/;
-  console.log("inside funvtion");
+
+  // console.log("inside funvtion");
   if(onDeliveryBtn.checked ){
     if(countryInp.value == "" || cityInp.value == "" || streetInp.value == "" || postalCodeInp.value == "" ){
       bodyedit.innerHTML="please enter full data";
       bodyedit.classList="alert alert-danger"
-      console.log("inside emptu");
+      // console.log("inside emptu");
     }else{
       bodyedit.classList="alert alert-success"  
       bodyedit.innerHTML="Order Placed"
@@ -106,15 +106,15 @@ let regex = /^\S+@\S+\.\S+$/;
   } else if ( creditBtn.checked){
     let regex1 = /^1?(\d{16})/;
     let regex2 = /^1?(\d{3})/;
-    console.log("inside credit");
+    // console.log("inside credit");
       if(nameInp.value == "" || numInp.value== "" || cvvInp.value== "" || exInp.value == ""){
-        console.log("inside empty credit");
+        // console.log("inside empty credit");
         bodyedit.innerHTML="please enter credit card data ";
         bodyedit.classList="alert alert-danger"
       }
       else if (regex1.test(numInp.value)==false || regex2.test(cvvInp.value)==false ){
-        console.log("inside wrong credit");
-        bodyedit.innerHTML="please enter correct card or cvv number ";
+        // console.log("inside wrong credit");
+        bodyedit.innerHTML="please enter correct card and cvv number ";
         bodyedit.classList="alert alert-danger"
     
     }else {
