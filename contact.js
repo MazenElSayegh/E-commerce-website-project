@@ -28,14 +28,8 @@ function textCheck(e){
   else {
     bodyedit.classList="alert alert-success"  
     bodyedit.innerHTML="We recieved your message"
-    setTimeout(function(){
-      //$("#bodyEdit").hide();
-      $(".fade").fadeOut();
-  }, 
-  5000)
       // console.log("inside else");
   }
-
 }
 // function validateForm() {
   
@@ -52,6 +46,13 @@ function textCheck(e){
 //     }
 //   }
 // }
+
+// $(".fade").fadeOut();
+//     setTimeout(function(){
+//       $("#bodyEdit").hide();
+      
+//   }, 
+//   2000)
 
 function disableSubmit() {
   let userName = document.getElementById("userName");

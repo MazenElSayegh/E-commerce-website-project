@@ -81,6 +81,15 @@ body {
   font-size: 20px;
   border-radius: 10px;
 }
+#backToHome{
+  text-decoration: none;
+  width: 100px;
+  /* color: black; */
+  color: #0145ac ;
+}
+#backToHome:hover{
+  color: black;
+}
 #placeOrder:hover {
   background-color: #0145ac;
   /* color: black; */
@@ -277,4 +286,10 @@ h1 {
 }
 #totalP > div {
   margin: 7px;
+}
+#submitFormModal{
+  width: 300px;
+  /* position: absolute; */
+  left: 40vw;
+  text-align: center;
 }

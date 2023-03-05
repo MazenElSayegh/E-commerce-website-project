@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 80px;
+  gap: 6vw;
   width: 100%;
   /* background-color: rgb(49,153,206); */
 }
@@ -798,7 +798,7 @@ label {
 }
 #proceedBtn {
   height: 5vh;
-  width: 10vw;
+  width: 130px;
   text-align: center;
   /* display: flex;
   align-items: center;

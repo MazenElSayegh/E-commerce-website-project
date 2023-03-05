@@ -93,12 +93,9 @@ if (JSON.parse(localStorage.getItem("tempData")) != null) {
 let addCartBtn = document.getElementById("addCartBtn");
 addCartBtn.addEventListener("click", accountCart);
 
+
 function accountCart() {
-  setTimeout(function(){
-    //$("#bodyEdit").hide();
-    $(".fade").fadeOut();
-}, 
-3000)
+
   let userName = document.getElementById("userName");
   let account = document.getElementById("account");
   let popupAccount = document.getElementById("popupAccount");
@@ -145,3 +142,11 @@ function addAttr() {
   addToCartBtn.setAttribute("data-bs-toggle", "modal");
   addToCartBtn.setAttribute("data-bs-target", "#exampleModal");
 }
+
+// addCartBtn.addEventListener("click",function () {
+// setTimeout(function(){
+// // $("#bodyEdit").hide();
+// $("#exampleModal").hide();
+// $(".fade").fadeOut();   
+// }, 
+// 2000)});
